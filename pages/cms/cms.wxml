@@ -1,3 +1,6 @@
 <view wx:for="{{list}}">
-  数据读取成功！订单顾客的id是 {{item.Customer_id}}
+  <view>
+  <image src="{{item.Commodity_img}}"></image>
+  <text>价格是{{item.Commodity_price}}</text>
+  </view>
 </view>

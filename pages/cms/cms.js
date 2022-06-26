@@ -7,7 +7,7 @@ Page({
 
   //生命周期函数--监听页面加载
   onLoad: function(options){
-    wx.cloud.database().collection('orders').get()
+    wx.cloud.database().collection('commodity').get()
       .then(res =>{
         console.log('请求到的数据',res)
         this.setData({
