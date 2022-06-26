@@ -1,0 +1,3 @@
+<view wx:for="{{list}}">
+  数据读取成功！订单顾客的id是 {{item.Customer_id}}
+</view>

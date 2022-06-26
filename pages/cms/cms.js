@@ -4,12 +4,7 @@ Page({
   data:{
 
   },
-  //go事件
-  go:function(){
-    wx.navigateTo({
-      url: '../cms/cms',
-    })
-  },
+
   //生命周期函数--监听页面加载
   onLoad: function(options){
     wx.cloud.database().collection('orders').get()
