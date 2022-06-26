@@ -1,4 +1,5 @@
 /**app.wxss**/
+/**代码同步测试**/
 .container {
   height: 100%;
   display: flex;
