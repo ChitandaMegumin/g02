@@ -13,5 +13,11 @@ Page({
     .catch(err=>{
       console.log("当前用户的积分获取失败",err)
     })
+  },
+
+  gotogoodsselect(){
+    wx.navigateTo({
+      url: '/pages/goodsselect/goodsselect',
+    })
   }
 })

@@ -4,20 +4,6 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/goodslist/goodslist",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/goodsdetail/goodsdetail",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
           "pathName": "pages/home/home",
           "query": "",
           "launchMode": "default",
@@ -33,6 +19,13 @@
         {
           "name": "",
           "pathName": "pages/goodsselect/goodsselect",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/my/my",
           "query": "",
           "launchMode": "default",
           "scene": null

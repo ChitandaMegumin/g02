@@ -1,0 +1,49 @@
+<view class="bgc">
+  <view class="bgc_image">
+    <image src="/image/bgc.png"></image>
+  </view>
+</view>
+
+<view class="userinfo">
+  <view class="userinfo_card">
+    <view class="username">
+      <text wx:if="{{username}}">{{username.Costomer_name}}</text>
+    </view>
+    <view class="ismember">
+      <text wx:if="{{username.Customer_member}}">大会员</text>
+      <text wx:elif="{{!username.Customer_member}}">开通会员</text>
+    </view>
+    <view class="userlevel">
+      <text wx:if="{{username}}">Lv.{{username.Costomer_level}}</text>
+    </view>
+    <view class="userdata">
+      <view class="userpoint">
+        <view class="userdata_image_box"><image class="userdata_image" src="/image/point.png"></image></view>
+      </view>
+      <view class="userdiscounts">
+        <view class="userdata_image_box"><image class="userdata_image" src="/image/cards.png"></image></view>
+        
+      </view>
+      <view class="usercard">
+        <view class="userdata_image_box"><image class="userdata_image" src="/image/discounts.png"></image></view>
+        
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="task">
+
+</view>
+
+<view class="discounts">
+
+</view>
+
+<view class="options">
+
+</view>
+
+<view class="bottom">
+
+</view>

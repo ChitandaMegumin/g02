@@ -1,5 +1,4 @@
 <view class="header">
-
     <swiper class="banners" indicator-dots indicator-color="ivory" autoplay interval="3000" indicator-active-color="#d43c33">
       <swiper-item>
         <image src="/image/activities_1.png"></image>
@@ -11,11 +10,10 @@
         <image src="/image/activities_3.png"></image>
       </swiper-item>
     </swiper>
-
 </view>
 <view class="body">
   <view class="entrance">
-    <view class="allcommodity">
+    <view class="allcommodity" bindtap="gotogoodsselect">
       <view class="entrance_image_box">
         <image class="entrance_image" src="/image/allcommodity.png"></image>
       </view>
