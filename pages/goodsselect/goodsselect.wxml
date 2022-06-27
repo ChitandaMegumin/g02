@@ -1,33 +1,165 @@
 <!--pages/goodsselect/goodsselect.wxml-->
 <view class="container1">
-  <view class="header">A</view>
+  <view class="header">
+  <view>🏬 国际花城小卖部</view>
+  
+  <button type="default" >配送地址</button>
+  </view>
   <view class="body">
     <scroll-view class="left" scroll-y="true">
-      <view>1</view>
-      <view>2</view>
-      <view>3</view>
-      <view>4</view>
-      <view>5</view>
-      <view>6</view>
-      <view>7</view>
-      <view>8</view>
-      <view>9</view>
-      <view>10</view>
-      <view>11</view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <text>美护百货</text>
+      </view>
     </scroll-view>
     <scroll-view class="right" scroll-y="true">
-      <view>1</view>
-      <view>2</view>
-      <view>3</view>
-      <view>4</view>
-      <view>5</view>
-      <view>6</view>
-      <view>7</view>
-      <view>8</view>
-      <view>9</view>
-      <view>10</view>
-      <view>11</view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
+      <view>
+        <image src="/image/allcommodity.png"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
+          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+        </view>
+      </view>
     </scroll-view>
   </view>
-  <view class="footer">D</view>
+  <view class="footer">
+    <view>
+      <image src="/image/allcommodity.png"></image>
+      <text>首页</text>
+    </view>
+    <view>
+      <image src="/image/allcommodity.png"></image>
+      <text>商品分类</text>
+    </view>
+    <view>
+      <image src="/image/allcommodity.png"></image>
+      <text>订单</text>
+    </view>
+    <view>
+      <image src="/image/allcommodity.png"></image>
+      <text>我的</text>
+    </view>
+  </view>
 </view>
