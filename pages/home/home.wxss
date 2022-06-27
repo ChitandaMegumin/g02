@@ -157,3 +157,11 @@
   height: 40px;
   
 }
+.banners{
+  width: 100%;
+  height: 400rpx;
+}
+.banners image{
+  width: 100%;
+  height: 100%;
+}

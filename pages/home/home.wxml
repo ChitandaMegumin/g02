@@ -1,5 +1,17 @@
 <view class="header">
-  <image class="activities" src="/image/activities_1.png"></image>
+
+    <swiper class="banners" indicator-dots indicator-color="ivory" autoplay interval="3000" indicator-active-color="#d43c33">
+      <swiper-item>
+        <image src="/image/activities_1.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/image/avtivities_2.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/image/activities_3.png"></image>
+      </swiper-item>
+    </swiper>
+
 </view>
 <view class="body">
   <view class="entrance">
@@ -35,7 +47,7 @@
   <view class="point">
     <view class="point_left">
       <view class="point_left_1">
-        <text class="point_left_1_text">我的积分：</text>
+        <text class="point_left_1_text" wx:if="{{code}}">我的积分：{{code.Costomer_code}}</text>
       </view>
       <view class="point_left_2">
         <text class="point_left_2_text">可兑换优惠券和丰富零食</text>
