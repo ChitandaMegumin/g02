@@ -5,6 +5,7 @@
         {
           "name": "",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "pathName": "pages/home/home",
           "query": "",
           "launchMode": "default",
@@ -28,6 +29,8 @@
           "name": "",
           "pathName": "pages/my/my",
 =======
+=======
+>>>>>>> littleshop
           "pathName": "pages/goodsselect/goodsselect",
 >>>>>>> littleshop
           "query": "",

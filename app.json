@@ -1,8 +1,11 @@
 {
   "pages": [
 <<<<<<< HEAD
+<<<<<<< HEAD
     "pages/home/home",
     "pages/my/my",
+=======
+>>>>>>> littleshop
 =======
 >>>>>>> littleshop
     "pages/index/index",
