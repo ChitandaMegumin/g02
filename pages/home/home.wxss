@@ -1,0 +1,159 @@
+.header{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.body{
+  margin: 15px 14px 0 14px;
+  width: 400px;
+  height: 450px;
+}
+.bottom{
+  margin: 15px 14px 0 14px;
+  width: 400px;
+  height: 80px;
+  border-style:solid;
+  border-width:1px;
+}
+.entrance{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 400px;
+  height: 200px;
+  border-width:1px;
+  border-radius:5%;
+  border-style:outset;
+  box-shadow:-1rpx -1rpx 0.1rpx 0.1rpx rgb(189, 187, 190) inset;
+}
+.entrance_image_box{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+.advertisement{
+  padding-top: 20px;
+  width: 400px;
+  height: 100px;
+}
+.point{
+  margin: 0 20px 0 20px;
+  width: 360px;
+  height: 80px;
+  border-width:1px;
+  border-radius:5%;
+  border-style:outset;
+  box-shadow:-1rpx -1rpx 0.1rpx 0.1rpx rgb(189, 187, 190) inset;
+}
+.allcommodity{
+  float: left;
+  margin: 10px 0 10px 10px;
+  width: 163px;
+  height: 180px;
+
+
+}
+.address{
+  float: right;
+  margin: 10px 10px 10px 0;
+  width: 163px;
+  height: 180px;
+  border-left-width: 1px;
+  border-left-style: dotted;
+  border-left-color: rgb(122, 120, 120);
+}
+.snacks{
+  float: right;
+  margin: -20px 10px 5px 0;
+  width: 183px;
+  height: 89px;
+  border-style:solid;
+  border-width:1px;
+  border-radius:5%;
+  border-style:outset;
+  box-shadow:-1rpx -1rpx 0.1rpx 0.1rpx rgb(189, 187, 190) inset;
+  background-color: #eaebec;
+}
+.discount{
+  float: left;
+  margin: -20px 10px 5px 10px;
+  width: 183px;
+  height: 89px;
+  border-width:1px;
+  border-radius:5%;
+  border-style:outset;
+  box-shadow:-1rpx -1rpx 0.1rpx 0.1rpx rgb(189, 187, 190) inset;
+  background-color: #eaebec;
+}
+.activities{
+  width: 428px;
+  height: 250px;
+}
+.entrance_image{
+  width: 88px;
+  height: 88px;
+}
+.entrance_text{
+  margin-left:50px;
+}
+.advertisement_image_box{
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+.advertisement_image{
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.advertisement_text{
+  float: right;
+  width: 20px;
+  width: 100px;
+  margin: 8px 0 20px 0;
+}
+.advertisement_text_2{
+  width: 200px;
+  float: left;
+  margin: -10px 0 10px 50px;
+  font-size: 12px;
+  color: rgb(142, 144, 146);
+}
+.point_left{
+  border-right-style:dotted;
+  border-right-width: 0.1px;
+  border-right-color: rgb(189, 187, 190);
+  width: 280px;
+  height: 80px;  
+  float: left;
+}
+.point_left_1{
+  width: 250px;
+  height: 40px;
+  padding: 17px 0 0 20px;
+}
+.point_left_1_text{
+  font-size: 20px;
+}
+.point_left_2{
+  margin: -10px 0 0 20px;
+  width: 250px;
+  height: 30px;
+}
+.point_left_2_text{
+  font-size: 12px;
+  color: rgb(158, 155, 155);
+}
+.point_right{
+  width: 75px;
+  height: 80px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.point_2code{
+  width: 40px;
+  height: 40px;
+  
+}

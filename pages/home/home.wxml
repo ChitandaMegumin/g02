@@ -1,0 +1,51 @@
+<view class="header">
+  <image class="activities" src="/image/activities_1.png"></image>
+</view>
+<view class="body">
+  <view class="entrance">
+    <view class="allcommodity">
+      <view class="entrance_image_box">
+        <image class="entrance_image" src="/image/allcommodity.png"></image>
+      </view>
+      <text class="entrance_text">全部商品</text>
+    </view>
+    <view class="address">
+      <view class="entrance_image_box">
+        <image class="entrance_image" src="/image/address.png"></image>
+      </view>
+      <text class="entrance_text">配送地址</text>
+    </view>
+  </view>
+  <view class="advertisement">
+    <view class="discount">
+      <view class="advertisement_image_box">
+        <image class="advertisement_image" src="/image/discountonlytoday.png"></image>
+      </view>
+      <text class="advertisement_text">限时优惠</text>
+      <text class="advertisement_text_2">快来抢购！！</text>
+    </view>
+    <view class="snacks">
+      <view class="advertisement_image_box">
+        <image class="advertisement_image" src="/image/snacks.png"></image>
+      </view>
+      <text class="advertisement_text">美味零食</text>
+      <text class="advertisement_text_2">最高9折优惠</text>
+    </view>
+  </view>
+  <view class="point">
+    <view class="point_left">
+      <view class="point_left_1">
+        <text class="point_left_1_text">我的积分：</text>
+      </view>
+      <view class="point_left_2">
+        <text class="point_left_2_text">可兑换优惠券和丰富零食</text>
+      </view>
+    </view>
+    <view class="point_right">
+      <image class="point_2code" src="/image/2code.png"></image>
+    </view>
+  </view>
+</view>
+<view class="bottom">
+
+</view>
