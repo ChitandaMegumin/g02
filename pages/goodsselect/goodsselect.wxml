@@ -1,0 +1,33 @@
+<!--pages/goodsselect/goodsselect.wxml-->
+<view class="container1">
+  <view class="header">A</view>
+  <view class="body">
+    <scroll-view class="left" scroll-y="true">
+      <view>1</view>
+      <view>2</view>
+      <view>3</view>
+      <view>4</view>
+      <view>5</view>
+      <view>6</view>
+      <view>7</view>
+      <view>8</view>
+      <view>9</view>
+      <view>10</view>
+      <view>11</view>
+    </scroll-view>
+    <scroll-view class="right" scroll-y="true">
+      <view>1</view>
+      <view>2</view>
+      <view>3</view>
+      <view>4</view>
+      <view>5</view>
+      <view>6</view>
+      <view>7</view>
+      <view>8</view>
+      <view>9</view>
+      <view>10</view>
+      <view>11</view>
+    </scroll-view>
+  </view>
+  <view class="footer">D</view>
+</view>

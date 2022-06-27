@@ -1,0 +1,46 @@
+/* pages/goodsselect/goodsselect.wxss */
+.container1{
+  width: 750rpx;
+  height: 1000px;
+}
+.header{
+  width: 750rpx;
+  height: 75px;
+  background-color: lightblue;
+}
+.body{
+  width: 750rpx;
+  height: 700px;
+  background-color: lightgreen;
+  display: flex;
+}
+.left{
+  width: 150rpx;
+  height: 700px;
+  background-color: lightpink;
+ 
+}
+.left view{
+  width: 150rpx;
+  height: 150rpx;
+  background-image: linear-gradient(to top,lightblue,lightgreen);
+}
+.right view{
+  width: 600rpx;
+  height: 200rpx;
+  background-image: linear-gradient(to top,lightblue,lightgreen);
+}
+.right{
+  width: 600rpx;
+  height:700px;
+  background-color: lightskyblue;
+}
+.footer{
+  width: 750rpx;
+  bottom: 0px;
+  height: 75px;
+  background-color: lightslategrey;
+}
+.left view:nth-child(1){
+  
+}

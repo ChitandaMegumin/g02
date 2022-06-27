@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/cms/cms",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/goodsselect/goodsselect"
   ],
   "window": {
     "backgroundTextStyle": "light",
