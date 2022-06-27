@@ -4,6 +4,7 @@
       "list": [
         {
           "name": "",
+<<<<<<< HEAD
           "pathName": "pages/home/home",
           "query": "",
           "launchMode": "default",
@@ -26,6 +27,9 @@
         {
           "name": "",
           "pathName": "pages/my/my",
+=======
+          "pathName": "pages/goodsselect/goodsselect",
+>>>>>>> littleshop
           "query": "",
           "launchMode": "default",
           "scene": null
