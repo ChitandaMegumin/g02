@@ -1,17 +1,10 @@
 {
   "pages": [
-<<<<<<< HEAD
-<<<<<<< HEAD
     "pages/home/home",
     "pages/my/my",
-=======
->>>>>>> littleshop
-=======
->>>>>>> littleshop
     "pages/index/index",
     "pages/cms/cms",
     "pages/logs/logs",
-    "pages/home/home",
     "pages/goodsselect/goodsselect"
   ],
   "window": {

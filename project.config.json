@@ -47,9 +47,10 @@
   "libVersion": "2.24.6",
   "appid": "wxe20ea7dc672e2d9d",
   "projectname": "littleshop",
-  "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {}
 }
