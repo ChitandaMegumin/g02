@@ -7,58 +7,25 @@
   </view>
   <view class="body">
     <scroll-view class="left" scroll-y="true">
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <text>美护百货</text>
+      <view wx:for="{{goods}}">
+        <image src="{{item.Commodity_img}}"></image>
+        <text>{{item.Commodity_type}}</text>
       </view>
     </scroll-view>
     <scroll-view class="right" scroll-y="true">
+      <view wx:for="{{goods}}">
+        <image src="{{item.Commodity_img}}"></image>
+        <view class="righttext">
+          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">{{item.Commodity_name}}</text>
+          <text class="description" >{{item.Commodity_desc}}</text>
+          <text class="price" style="font-size: 25px;font-weight: 400;">{{item.Commodity_price}}</text>
+        </view>
+      </view>
       <view>
-        <image src="/image/allcommodity.png"></image>
+        <image src="{{goods[0].Commodity_img}}"></image>
         <view class="righttext">
           <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
+          <text class="description" >{{goods[0].Commodity_desc}}</text>
           <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
         </view>
       </view>
