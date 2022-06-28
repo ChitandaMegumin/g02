@@ -6,7 +6,8 @@
     "pages/cms/cms",
     "pages/logs/logs",
     "pages/yunhanshu/yunhanshu",
-    "pages/goodsselect/goodsselect"
+    "pages/goodsselect/goodsselect",
+    "pages/pointshop/pointshop"
   ],
   "window": {
     "backgroundTextStyle": "light",

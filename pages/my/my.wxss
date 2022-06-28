@@ -167,6 +167,8 @@
   padding-left: 80rpx;
 }
 .footer{
+  position: fixed;
+  bottom: 0;
   height: 200rpx;
   width: 100%;
   background-color: white;

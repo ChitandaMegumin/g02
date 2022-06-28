@@ -1,0 +1,91 @@
+.pointshop{
+  width: 100%;
+  height: 1600rpx;
+  background-color: rgba(221, 221, 221, 0.349);
+}
+.mypoint_card{
+  width: 100%;
+  height: 400rpx;
+  background-color: white;
+}
+.mypoint_text{
+  width: 300rpx;
+  height: 10%;
+  margin-top:120rpx;
+}
+.mypoint_text text{
+  font-size: 35rpx;
+  color: rgb(95, 99, 99);
+  margin-left: 120rpx;
+}
+.mypoint{
+  width: 200rpx;
+  height: 100rpx;
+  margin-top:20rpx;
+  margin-left: 120rpx;
+}
+.mypoint text{
+  font-size: 75rpx;
+  font-weight: bolder;
+}
+.mypoint_box{
+  width: 300rpx;
+  height: 300rpx;
+  float: left;
+}
+.mypoint_image{
+  width: 400rpx;
+  height: 100%;
+  float: right;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.mypoint_image image{
+  width: 220rpx;
+  height: 225rpx;
+  margin-left: 100rpx;
+}
+
+.exchange{
+  width: 100%;
+  height: 350rpx;
+  background-color: white;
+  margin-top: 30rpx;
+}
+.discounts{
+  width: 49.6%;
+  height: 350rpx;
+  float: inline-start;
+}
+.discount_image{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rpx;
+}
+.discount_image image{
+  width: 320rpx;
+  height: 220rpx;
+  
+}
+.discount_text{
+  display: flex;
+  justify-content: center;
+}
+.discount_text text{
+  
+}
+.discount_button{
+  display: flex;
+  justify-content: center;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  height: 200rpx;
+  width: 100%;
+  background-color: white;
+}

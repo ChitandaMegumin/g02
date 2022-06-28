@@ -1,0 +1,64 @@
+<view class="pointshop">
+
+
+
+  <view class="mypoint_card">
+    <view class="mypoint_box">
+    <view class="mypoint_text">
+      <text>可用积分：</text>
+    </view>
+    <view class="mypoint">
+      <text wx:if="user">{{user.Customer_point}}</text>
+    </view>
+    </view>
+    <view class="mypoint_image">
+      <image src="/image/task.png"></image>
+    </view>
+  </view>
+
+  <view class="exchange">
+    <view class="discounts">
+      <view class="discount_image">
+        <image src="/image/discount_point.png"></image>
+      </view>
+      <view class="discount_text">
+        <text>20积分</text>
+      </view>
+      <view class="discount_button">
+        <button>兑换</button>
+      </view>
+    </view>
+    <view class="discounts">
+      <view class="discount_image">
+        <image src="/image/discount_point.png"></image>
+      </view>
+      <view class="discount_text">
+        <text>30积分</text>
+      </view>
+      <view class="discount_button">
+        <button>兑换</button>
+      </view>
+    </view>
+  </view>
+  
+  <view class="footer">
+    <view>
+      <image src="/image/allcommodity.png" bindtap="gotohome"></image>
+      <text>首页</text>
+    </view>
+    <view>
+      <image src="/image/allcommodity.png" bindtap="gotogoodsselect"></image>
+      <text>商品分类</text>
+    </view>
+    <view>
+      <image src="/image/allcommodity.png" bindtap="gotoorder"></image>
+      <text>订单</text>
+    </view>
+    <view>
+      <image src="/image/allcommodity.png" bindtap="gotomy"></image>
+      <text>我的</text>
+    </view>
+  </view>
+
+
+</view>
