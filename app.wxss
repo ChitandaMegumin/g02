@@ -10,3 +10,26 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.footer{
+  margin-top: 10px;
+  width: 750rpx;
+  bottom: 0px;
+  height: 150rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.footer view{
+  height: 150rpx;
+  width: 150rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer image{
+  max-width: 85rpx;
+  max-height: 85rpx;
+  margin: 5px auto;
+}
+.footer view text{
+  margin-bottom: 5px;
+}

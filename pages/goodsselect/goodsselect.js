@@ -5,19 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    goods:Object
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad (options){
-      wx.cloud.database().collection('commodity').get().then(res=>{
-        console.log('请求到的数据',res)
-        this.setData({
-          list: res.data
-        })
-      })
+      this.getGoods()
   },
 
   /**
@@ -67,5 +62,36 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  getGoods(){
+    wx.cloud.database().collection('commodity').get().then(res=>{
+      console.log('请求到的数据',res)
+      this.setData({
+        goods: res.data
+      })
+    })
+  },
+  gotohome(){
+    wx.redirectTo({
+      url: '/pages/home/home',
+      
+    })
+  },
+  gotogoodsselect(){
+    wx.redirectTo({
+      url: '/pages/goodselect/goodselect',
+      
+    })
+  },
+  gotoorder(){
+    wx.redirectTo({
+      url: '/pages/order/order',
+    })
+  },
+  gotomy(){
+    wx.redirectTo({
+      url: '/pages/my/my',
+    })
   }
 })
+

@@ -100,7 +100,7 @@
 .footer image{
   max-width: 85rpx;
   max-height: 85rpx;
-  margin: auto;
+  margin: 5px auto;
 }
 .footer view text{
   margin-bottom: 5px;

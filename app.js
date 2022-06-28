@@ -7,4 +7,26 @@ App({
       env: 'cloud1-1gwwzozxde8dfbf2' //云开发环境id
     })
   },
+  gotohome(){
+    wx.redirectTo({
+      url: '/pages/home/home',
+      
+    })
+  },
+  gotogoodsselect(){
+    wx.redirectTo({
+      url: '/pages/goodselect/goodselect',
+      
+    })
+  },
+  gotoorder(){
+    wx.redirectTo({
+      url: '/pages/order/order',
+    })
+  },
+  gotomy(){
+    wx.redirectTo({
+      url: '/pages/my/my',
+    })
+  }
 })
