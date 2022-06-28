@@ -1,5 +1,6 @@
 .page{
   background-color: rgba(240, 239, 239, 0.76);
+  height: 2000rpx;
 }
 .bgc{
   width: 748rpx;

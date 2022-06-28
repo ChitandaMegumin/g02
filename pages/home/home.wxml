@@ -43,7 +43,7 @@
     </view>
   </view>
   <view class="point">
-    <view class="point_left">
+    <view class="point_left" bindtap="gotopointshop">
       <view class="point_left_1">
         <text class="point_left_1_text" wx:if="{{code}}">我的积分：{{code.Customer_point}}</text>
       </view>

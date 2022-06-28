@@ -29,5 +29,10 @@ Page({
     wx.navigateTo({
       url: '/pages/home/home',
     })
+  },
+  gotopointshop(){
+    wx.navigateTo({
+      url: '/pages/pointshop/pointshop',
+    })
   }
 })

@@ -22,7 +22,7 @@
     
     <view class="userdata">
 
-      <view class="userpoint">
+      <view class="userpoint" bindtap="gotopointshop">
         <view class="userdata_image_box">
           <image class="userdata_image" src="/image/point.png"></image>
         </view>
@@ -71,7 +71,7 @@
       <image class="arrow" src="/image/jiantou.png"></image>
     </view>
   </view>
-  <view class="option">
+  <view class="option" bindtap="gotopointshop">
     <view class="text_box">
       <text class="option_text">兑换中心</text>
     </view>
