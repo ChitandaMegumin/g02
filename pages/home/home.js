@@ -19,5 +19,15 @@ Page({
     wx.navigateTo({
       url: '/pages/goodsselect/goodsselect',
     })
+  },
+  gotomy(){
+    wx.navigateTo({
+      url: '/pages/my/my',
+    })
+  },
+  gotohome(){
+    wx.navigateTo({
+      url: '/pages/home/home',
+    })
   }
 })

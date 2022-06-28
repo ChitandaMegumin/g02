@@ -9,13 +9,13 @@
 <view class="userinfo">
   <view class="userinfo_card">
     <view class="username">
-      <text wx:if="{{username}}">{{username.Costomer_name}}</text>
+      <text wx:if="{{username}}">{{username.Customer_name}}</text>
       <view class="ismember">
         <text wx:if="{{username.Customer_member}}">大会员</text>
         <text wx:elif="{{!username.Customer_member}}">开通会员</text>
       </view>
       <view class="userlevel">
-        <text wx:if="{{username}}">Lv.{{username.Costomer_level}}</text>
+        <text wx:if="{{username}}">Lv.{{username.Customer_level}}</text>
       </view>
     </view>
     
@@ -27,7 +27,7 @@
           <image class="userdata_image" src="/image/point.png"></image>
         </view>
         <view class="userdata_text_box">
-          <text class="userdata_text" wx:if="{{username}}">积分:{{username.Costomer_code}}</text>
+          <text class="userdata_text" wx:if="{{username}}">积分:{{username.Customer_point}}</text>
         </view>
       </view>
 
@@ -89,8 +89,24 @@
   </view>
 </view>
 
-<view class="bottom">
+<view class="footer">
+    <view>
+      <image src="/image/allcommodity.png" bindtap="gotohome"></image>
+      <text>首页</text>
+    </view>
+    <view>
+      <image src="/image/allcommodity.png" bindtap="gotogoodsselect"></image>
+      <text>商品分类</text>
+    </view>
+    <view>
+      <image src="/image/allcommodity.png" bindtap="gotoorder"></image>
+      <text>订单</text>
+    </view>
+    <view>
+      <image src="/image/allcommodity.png" bindtap="gotomy"></image>
+      <text>我的</text>
+    </view>
+  </view>
 
-</view>
 
 </view>
