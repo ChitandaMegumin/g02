@@ -1,4 +1,5 @@
 // app.js
+//xqk
 App({
   //小程序一启动就会执行
   onLaunch() {
