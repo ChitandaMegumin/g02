@@ -1,0 +1,7 @@
+<!--pages/yunhanshu/yunhanshu.wxml-->
+<view wx:for="{{list}}">
+  <view>
+  <image src="{{item.Commodity_img}}"></image>
+  <text>价格是{{item.Commodity_price}}</text>
+  </view>
+</view>
