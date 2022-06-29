@@ -10,7 +10,7 @@
         </text>
       </view>
     </view>
-    <view class="addr_image">
+    <view class="addr_image" bindtap="gotoaddredit">
       <image src="/image/addr_edit.png"></image>
     </view>
   

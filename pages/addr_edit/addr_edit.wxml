@@ -1,0 +1,42 @@
+<view class="addr_edit">
+  <view class="addr_edit_card">
+    <view class="addr_edit_option">
+      <view class="addr_edit_option_text">  
+        <text>您的姓名：</text>
+      </view>
+      <view class="addr_edit_option_input">  
+        <input type="text"/>
+      </view>
+    </view>
+    <view class="addr_edit_option">
+      <view class="addr_edit_option_text">  
+        <text>您的性别：</text>
+      </view>
+      <view class="addr_edit_option_input">  
+        <input type="text"/>
+      </view>
+    </view>
+    <view class="addr_edit_option">
+      <view class="addr_edit_option_text">  
+        <text>您的电话：</text>
+      </view>
+      <view class="addr_edit_option_input">  
+        <input type="text"/>
+      </view>
+    </view>
+    <view class="addr_edit_option">
+      <view class="addr_edit_option_text">  
+        <text>您的住址：</text>
+      </view>
+      <view class="addr_edit_option_input">  
+        <input type="text"/>
+      </view>
+    </view>
+  
+  </view>
+  <view class="addr_edit_save">
+    <button>保存</button>
+  
+  </view>
+
+</view>

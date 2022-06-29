@@ -28,5 +28,10 @@ Page({
     wx.navigateTo({
       url: '/pages/home/home',
     })
+  },
+  gotoaddredit(){
+    wx.navigateTo({
+      url: '/pages/addr_edit/addr_edit',
+    })
   }
 })

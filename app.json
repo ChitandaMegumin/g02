@@ -8,7 +8,8 @@
     "pages/yunhanshu/yunhanshu",
     "pages/goodsselect/goodsselect",
     "pages/pointshop/pointshop",
-    "pages/addr/addr"
+    "pages/addr/addr",
+    "pages/addr_edit/addr_edit"
   ],
   "window": {
     "backgroundTextStyle": "light",
