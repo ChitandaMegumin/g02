@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goods:Object
+    goods:[],
+    customer:[],
+    goodsfortype:[]
   },
 
   /**
@@ -64,11 +66,37 @@ Page({
 
   },
   getGoods(){
-    wx.cloud.database().collection('commodity').get().then(res=>{
-      console.log('请求到的数据',res)
-      this.setData({
-        goods: res.data
-      })
+    wx.cloud.callFunction({
+      name: 'getCommodityAll'
+    }).then(res =>{
+        console.log('获取全部商品云函数调用成功',res)
+        this.setData({
+          goods: res.result.data
+        })
+    }).catch(res=>{
+      console.log('失败',res)
+    })
+
+    wx.cloud.callFunction({
+      name: 'getUserAll'
+    }).then(res =>{
+        console.log('获取全部客户调用成功',res)
+        this.setData({
+          customer: res.result.data
+        })
+    }).catch(res=>{
+      console.log('失败',res)
+    })
+
+    wx.cloud.callFunction({
+      name: 'getTypeAll'
+    }).then(res =>{
+        console.log('获取商品类型成功',res)
+        this.setData({
+          goodsfortype: res.result.data
+        })
+    }).catch(res=>{
+      console.log('失败',res)
     })
   },
   gotohome(){

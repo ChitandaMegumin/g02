@@ -19,7 +19,7 @@
       </view>
       <text class="entrance_text">全部商品</text>
     </view>
-    <view class="address">
+    <view class="address" bindtap="gotoaddr">
       <view class="entrance_image_box">
         <image class="entrance_image" src="/image/address.png"></image>
       </view>
@@ -43,7 +43,7 @@
     </view>
   </view>
   <view class="point">
-    <view class="point_left">
+    <view class="point_left" bindtap="gotopointshop">
       <view class="point_left_1">
         <text class="point_left_1_text" wx:if="{{code}}">我的积分：{{code.Customer_point}}</text>
       </view>
