@@ -7,7 +7,8 @@
     "pages/logs/logs",
     "pages/yunhanshu/yunhanshu",
     "pages/goodsselect/goodsselect",
-    "pages/pointshop/pointshop"
+    "pages/pointshop/pointshop",
+    "pages/addr/addr"
   ],
   "window": {
     "backgroundTextStyle": "light",

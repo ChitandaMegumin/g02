@@ -1,0 +1,54 @@
+.addr{
+  width: 100%;
+  height: 1600rpx;
+  background-color: rgba(219, 219, 219, 0.568);
+}
+.addr_card{
+  width: 100%;
+  height: 150rpx;
+  background-color: white;
+  position: absolute;
+  top: 10rpx;
+}
+.addr_left{
+  height: 100%;
+  width: 75%;
+  float: left;
+}
+.addr_nameandphone{
+  width: 80%;
+  height: 55rpx; 
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+  margin-bottom: 0;
+}
+.addr_nameandphone text{
+  font-size: 35rpx;
+}
+.addr_addr{
+  width: 80%;
+  height: 50%;
+  margin-left: 30rpx;
+}
+.addr_addr text{
+  font-size: 25rpx;
+  color:grey;
+}
+.addr_image{
+  width: 24%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 60rpx;
+}
+.addr_image image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  height: 200rpx;
+  width: 100%;
+  background-color: white;
+}

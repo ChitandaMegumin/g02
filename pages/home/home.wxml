@@ -19,7 +19,7 @@
       </view>
       <text class="entrance_text">全部商品</text>
     </view>
-    <view class="address">
+    <view class="address" bindtap="gotoaddr">
       <view class="entrance_image_box">
         <image class="entrance_image" src="/image/address.png"></image>
       </view>
