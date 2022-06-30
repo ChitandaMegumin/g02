@@ -14,7 +14,7 @@ Page({
   onLoad: function (options) {
     //云函数的调用
     wx.cloud.callFunction({
-      name: 'getCommodityAll'
+      name: 'testgetall'
     })
     .then(res =>{
       console.log('成功',res)
