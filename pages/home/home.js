@@ -1,6 +1,7 @@
 Page({
 
-  onLoad(){
+  onLoad(Wxhao){
+    console.log('Wxhao',Wxhao)
     wx.cloud.database().collection("customer")
     .doc("16db756f62b9449d08afcc12701b1417")
     .get()

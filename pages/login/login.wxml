@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+输入微信号：
+<input class="input" bindinput="getWxhao" value="Apple_4027534"></input>
+输入密码：
+<input class="input" bindinput="getPassword"></input>
+<button type="primary" bindtap="login">登录</button>
