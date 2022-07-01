@@ -1,12 +1,12 @@
 Page({
   onLoad(){
-    wx.cloud.database().collection("customer")
-    .doc("16db756f62b9449d08afcc12701b1417")
-    .get()
+    wx.cloud.callFunction({
+      name:"getCurrentUserName"
+    })
     .then(res=>{
       console.log("获取用户信息成功",res)
       this.setData({
-        user:res.data
+        user:res.result.data
       })
     })
     .catch(err=>{

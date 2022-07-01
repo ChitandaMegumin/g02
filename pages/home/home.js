@@ -1,14 +1,21 @@
 Page({
 
+<<<<<<< Updated upstream
   onLoad(Wxhao){
     console.log('Wxhao',Wxhao)
     wx.cloud.database().collection("customer")
     .doc("16db756f62b9449d08afcc12701b1417")
     .get()
+=======
+  onLoad(){
+    wx.cloud.callFunction({
+      name:"getCurrentUserName"
+    })
+>>>>>>> Stashed changes
     .then(res=>{
       console.log("当前用户的积分获取成功",res)
       this.setData({
-        code:res.data
+        code:res.result.data
       }) 
     })
     .catch(err=>{
