@@ -1,6 +1,22 @@
 <!--pages/login/login.wxml-->
-输入微信号：
-<input class="input" bindinput="getWxhao" value="Apple_4027534"></input>
-输入密码：
-<input class="input" bindinput="getPassword"></input>
-<button type="primary" bindtap="login">登录</button>
+<view class="v1" style="height:{{clientHeight?clientHeight+'px':'auto'}}">
+ 
+ <!-- v2父容器  子view使用绝对布局 -->
+   <view class="v2">
+     <view class="dltext" style="width: 232rpx; height: 92rpx; display: block; box-sizing: border-box; left: 0rpx; top: -2rpx">登录</view>
+  
+     <!-- 微信号 -->
+     <view class="phoneCs">
+       <input placeholder="请输入账号" type="number" bindinput="getWxhao" value="Apple_4027534"/>
+     </view>
+     <!-- 密码 -->
+     <view class=passwordCs">
+       <input placeholder="这号密码123456" type="password" bindinput="getPassword" />
+     </view>
+     <!-- 登录按钮 -->
+     <view class="denglu">
+       <button class="btn-dl" type="primary" bindtap="login">登录</button>
+     </view>
+     
+   </view>
+ </view>
