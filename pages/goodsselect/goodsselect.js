@@ -7,7 +7,9 @@ Page({
   data: {
     goods:[],
     customer:[],
-    goodsfortype:[]
+    goodsfortype:[],
+    gettest:[],
+    pricenum:0
   },
 
   /**
@@ -15,6 +17,7 @@ Page({
    */
   onLoad (options){
       this.getGoods()
+      this.getType()
   },
 
   /**
@@ -67,7 +70,7 @@ Page({
   },
   getGoods(){
     wx.cloud.callFunction({
-      name: 'getCommodityAll'
+      name: 'testgetall'
     }).then(res =>{
         console.log('获取全部商品云函数调用成功',res)
         this.setData({
@@ -76,22 +79,12 @@ Page({
     }).catch(res=>{
       console.log('失败',res)
     })
-
+  },
+  getType(){
     wx.cloud.callFunction({
-      name: 'getUserAll'
+      name: 'getAllType'
     }).then(res =>{
-        console.log('获取全部客户调用成功',res)
-        this.setData({
-          customer: res.result.data
-        })
-    }).catch(res=>{
-      console.log('失败',res)
-    })
-
-    wx.cloud.callFunction({
-      name: 'getTypeAll'
-    }).then(res =>{
-        console.log('获取商品类型成功',res)
+        console.log('获取全部商品云函数调用成功',res)
         this.setData({
           goodsfortype: res.result.data
         })
@@ -107,7 +100,7 @@ Page({
   },
   gotogoodsselect(){
     wx.redirectTo({
-      url: '/pages/goodselect/goodselect',
+      url: '/pages/goodsselect/goodsselect',
       
     })
   },

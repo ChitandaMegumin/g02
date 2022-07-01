@@ -2,114 +2,38 @@
 <view class="container1">
   <view class="header">
   <view>🏬 国际花城小卖部</view>
-  
   <button type="default" >配送地址</button>
   </view>
   <view class="body">
     <scroll-view class="left" scroll-y="true">
-      <view wx:for="{{goods}}">
-        <image src="{{item.Commodity_img}}"></image>
-        <text>{{item.Commodity_type}}</text>
+      <view wx:for="{{goodsfortype}}">
+        <image src="{{item.Type_img}}"></image>
+        <text>{{item.Type_name}}</text>
       </view>
     </scroll-view>
     <scroll-view class="right" scroll-y="true">
-      <view wx:for="{{goods}}">
-        <image src="{{item.Commodity_img}}"></image>
+      <view  wx:for="{{goods}}">
+        <image class="rightimg" src="{{item.Commodity_img}}"></image>
         <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">{{item.Commodity_name}}</text>
-          <text class="description" >{{item.Commodity_desc}}</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">{{item.Commodity_price}}</text>
-        </view>
-      </view>
-      <view>
-        <image src="{{goods[0].Commodity_img}}"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >{{goods[0].Commodity_desc}}</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
-        </view>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
-        </view>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
-        </view>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
-        </view>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
-        </view>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
-        </view>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
-        </view>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
-        </view>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
-        </view>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
-        </view>
-      </view>
-      <view>
-        <image src="/image/allcommodity.png"></image>
-        <view class="righttext">
-          <text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">香奈儿洁面乳</text>
-          <text class="description" >高贵香奈儿带给你的至臻界面享受高贵香奈儿带给你的至臻界</text>
-          <text class="price" style="font-size: 25px;font-weight: 400;">¥999</text>
+          <view><text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">{{item.Commodity_name}}</text></view>
+          <view><text class="description" >{{item.Commodity_desc}}</text></view>
+          <view style="display: flex;">
+            <text class="price" style="font-size: 25px;font-weight: 400;">¥ {{item.Commodity_price}}</text>
+            <view class="numAdd">
+            <image src="/image/删减.png"> </image>
+            <view>10</view>
+            <image src="/image/添加.png"> </image>
+          </view>
+          </view>
         </view>
       </view>
     </scroll-view>
+  </view>
+  <view class="tarBar-buycar">
+    <image src="/image/购物车.png"></image>
+    <text>¥ {{pricenum}}</text>
+    <view class="buycarNum"><text>8</text></view>
+    <button type="default" >结算</button>
   </view>
   <view class="footer">
     <view>
