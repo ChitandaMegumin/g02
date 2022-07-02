@@ -51,7 +51,7 @@
         <text class="point_left_2_text">可兑换优惠券和丰富零食</text>
       </view>
     </view>
-    <view class="point_right">
+    <view class="point_right" bindtap="gotomembercode">
       <image class="point_2code" src="/image/2code.png"></image>
     </view>
   </view>

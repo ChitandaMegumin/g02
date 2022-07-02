@@ -12,7 +12,8 @@
     "pages/goodsselect/goodsselect",
     "pages/pointshop/pointshop",
     "pages/addr/addr",
-    "pages/addr_edit/addr_edit"
+    "pages/addr_edit/addr_edit",
+    "pages/member_code/member_code"
   ],
   "window": {
     "backgroundTextStyle": "light",

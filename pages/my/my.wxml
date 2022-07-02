@@ -63,7 +63,7 @@
 
 
 <view class="options">
-  <view class="option">
+  <view class="option" bindtap="gotomembercode">
     <view class="text_box">
       <text class="option_text">会员码</text>
     </view>

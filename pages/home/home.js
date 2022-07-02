@@ -49,5 +49,10 @@ Page({
     wx.navigateTo({
       url: '/pages/addr/addr',
     })
+  },
+  gotomembercode(){
+    wx.navigateTo({
+      url: '/pages/member_code/member_code',
+    })
   }
 })

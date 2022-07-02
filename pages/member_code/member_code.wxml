@@ -1,0 +1,14 @@
+<view> 
+  <view class="black">
+
+  </view>
+  <view class="image">
+      <image src="/image/头像.png"></image>
+  </view>
+  <view class="text">
+      <text>此二维码可累计积分(不支持付款)</text>
+  </view>
+  <view class="code">
+      <image src="/image/membercode.jpg"></image>
+  </view>
+</view>
