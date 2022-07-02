@@ -75,9 +75,7 @@
   display: flex;
   justify-content: center;
 }
-.discount_text text{
-  
-}
+
 .discount_button{
   display: flex;
   justify-content: center;

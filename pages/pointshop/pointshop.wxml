@@ -24,7 +24,7 @@
       <view class="discount_text">
         <text>20积分</text>
       </view>
-      <view class="discount_button" bindtap="update_point" data-user="{{user}}">
+      <view class="discount_button" bindtap="update_point" data-user="{{user}}" data-point="20">
         <button>兑换</button>
       </view>
     </view>
@@ -35,7 +35,7 @@
       <view class="discount_text">
         <text>30积分</text>
       </view>
-      <view class="discount_button">
+      <view class="discount_button" bindtap="update_point" data-user="{{user}}" data-point="30">
         <button>兑换</button>
       </view>
     </view>

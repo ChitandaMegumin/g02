@@ -18,12 +18,13 @@ Page({
   },
   update_point(event){
     var point=event.currentTarget.dataset.user.Customer_point
+    var _point=event.currentTarget.dataset.point
     wx.cloud.callFunction({
       name:"updatePoint",
       data:{
         _id:"16db756f62b9449d08afcc12701b1419",
         data:{
-          Customer_point:point-20
+          Customer_point:point-_point
         }
       }
     })
