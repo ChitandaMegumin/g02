@@ -3,7 +3,7 @@ Page({
   
   onLoad(){
     wx.cloud.database().collection("orders")
-    .doc("0a4ec1f962b7f38f0cb954a572dfd73d")
+    .doc("ca780ad562bf2db40979515a116b41e7")
     .get()
     .then(res=>{
       console.log("获取成功",res)
@@ -39,7 +39,7 @@ Page({
   },
   gotohis(){
     wx.navigateTo({
-      url: '/pages/his/his',
+      url: '/pages/order/order',
     })
   },
   gotopointshop(){
