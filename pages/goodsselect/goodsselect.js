@@ -1,4 +1,5 @@
 // pages/goodsselect/goodsselect.js
+const app =getApp()
 Page({
 
   /**
@@ -11,7 +12,9 @@ Page({
     gettest:[],
     pricenum:0,
     goodsintype:[],
-    currentType:0
+    currentType:0,
+    goodsincart:[],
+    
   },
 
   /**
@@ -125,7 +128,6 @@ Page({
   gotogoodsselect(){
     wx.redirectTo({
       url: '/pages/goodsselect/goodsselect',
-      
     })
   },
   gotoorder(){
@@ -137,6 +139,57 @@ Page({
     wx.redirectTo({
       url: '/pages/my/my',
     })
-  }
+  },
+  addCart(){
+    app.globalData.carList.push(this.data.goods)
+    this.setData({
+      goodsincart:app.globalData.cartList
+    })
+    wx.setStorageSync('cartList', app.globalData.cartList)
+  },
+  cartAdd(event){
+    let id = event.currentTarget.dataset.id
+    let index = -1
+    console.log('传递的商品',id)
+    console.log('app.globalData.cartList',app.globalData.cartList)
+    console.log('index',index)
+    id.Commodity_currentnum++
+    if(app.globalData.cartList.length == 0){
+      id.Commodity_flag=true
+      app.globalData.cartList.push(id)
+      wx.setStorageSync('cartList', app.globalData.cartList)
+    }
+    else{
+      for(let idx in app.globalData.cartList){
+        console.log('定位',idx)
+        if(app.globalData.cartList[idx]._id==id._id){
+          index=idx
+        }
+      }
+      if(index!=-1){
+        app.globalData.cartList[index].Commodity_currentnum++
+        wx.setStorageSync('cartList', app.globalData.cartList)
+      }
+      app.globalData.carList=
+      wx.setStorageSync('cartList',app.globalData.cartList)
+    }
+ 
+    // this.setData({
+    //   currentType:index
+    // })
+    // wx.cloud.callFunction({
+    //   name: 'getGoodsForType',
+    //   data: {
+    //     type:id,
+    //   }
+    // }).then(res =>{
+    //     console.log('调用成功',res)
+    //     this.setData({
+    //       goods: res.result.data
+    //     })
+    // }).catch(res=>{
+    //   console.log('失败',res)
+    // })
+  },
 })
 
