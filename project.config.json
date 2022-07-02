@@ -45,7 +45,7 @@
     "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.24.6",
+  "libVersion": "2.24.7",
   "appid": "wxe20ea7dc672e2d9d",
   "projectname": "littleshop",
   "editorSetting": {
