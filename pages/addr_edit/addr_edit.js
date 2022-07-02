@@ -1,66 +1,46 @@
-// pages/addr_edit/addr_edit.js
+let uname = ''
+let sex = ''
+let phone = ''
+let addr = ''
+const app = getApp()
 Page({
+  onLoad(){}
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  ,
+  getname(e){
+    uname = e.detail.value
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  getsex(e){
+    sex = e.detail.value
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  getphone(e){
+    phone = e.detail.value
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  getaddr(e){
+    addr = e.detail.value
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
+  updateuser(){
+    console.log("id",app.globalData._id)
+    console.log("信息",uname+" "+sex+" "+phone+" "+addr)
+    wx.cloud.callFunction({
+      name: "updateUserInfo",
+      data:{
+        id:app.globalData._id,
+        data:{
+          Customer_name:uname,
+          Customer_sex:sex,
+          Customer_phone:phone,
+          Customer_addr:addr
+        }
+      }
+    })
+    .then(res=>{
+      console.log("更新数据成功",res)
+    })
+    .catch(err=>{
+      console.log("更新数据失败",err)
+    })
+    //this.onLoad()
+    }
+  
 })

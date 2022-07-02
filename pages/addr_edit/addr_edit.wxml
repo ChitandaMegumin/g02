@@ -5,7 +5,7 @@
         <text>您的姓名：</text>
       </view>
       <view class="addr_edit_option_input">  
-        <input type="text"/>
+        <input type="text" bindinput="getname"/>
       </view>
     </view>
     <view class="addr_edit_option">
@@ -13,7 +13,7 @@
         <text>您的性别：</text>
       </view>
       <view class="addr_edit_option_input">  
-        <input type="text"/>
+        <input type="text" bindinput="getsex"/>
       </view>
     </view>
     <view class="addr_edit_option">
@@ -21,7 +21,7 @@
         <text>您的电话：</text>
       </view>
       <view class="addr_edit_option_input">  
-        <input type="text"/>
+        <input type="text" bindinput="getphone"/>
       </view>
     </view>
     <view class="addr_edit_option">
@@ -29,13 +29,13 @@
         <text>您的住址：</text>
       </view>
       <view class="addr_edit_option_input">  
-        <input type="text"/>
+        <input type="text" bindinput="getaddr"/>
       </view>
     </view>
   
   </view>
   <view class="addr_edit_save">
-    <button>保存</button>
+    <button bindtap="updateuser">保存</button>
   
   </view>
 
