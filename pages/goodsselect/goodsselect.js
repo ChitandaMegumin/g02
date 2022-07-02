@@ -14,7 +14,9 @@ Page({
     goodsintype:[],
     currentType:0,
     goodsincart:[],
-    
+    totalnum:0,
+    showDialog: false,
+    currentnum:0
   },
 
   /**
@@ -23,6 +25,7 @@ Page({
   onLoad (options){
       this.getGoods()
       this.getType()
+      
   },
 
   /**
@@ -36,7 +39,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    
   },
 
   /**
@@ -117,7 +120,7 @@ Page({
     }).catch(res=>{
       console.log('失败',res)
     })
-      
+    
   },
   gotohome(){
     wx.redirectTo({
@@ -140,19 +143,60 @@ Page({
       url: '/pages/my/my',
     })
   },
-  addCart(){
-    app.globalData.carList.push(this.data.goods)
-    this.setData({
-      goodsincart:app.globalData.cartList
-    })
-    wx.setStorageSync('cartList', app.globalData.cartList)
-  },
-  cartAdd(event){
+  Cartdelete(event){
     let id = event.currentTarget.dataset.id
     let index = -1
     console.log('传递的商品',id)
     console.log('app.globalData.cartList',app.globalData.cartList)
     console.log('index',index)
+    if(id.Commodity_currentnum<=0){
+      wx.showToast({
+        title: '数量已经为零啦！',
+        icon: 'none',
+        duration: 1500
+      })
+    }
+    else{
+      for(let idx in app.globalData.cartList){
+        console.log('定位idx',idx)
+        if(app.globalData.cartList[idx]._id==id._id){
+          index=idx
+        }
+      }
+      if(index==-1){
+        wx.showToast({
+          title: '数量已经为零啦！',
+          icon: 'none',
+          duration: 1500
+        })
+      }
+      else{
+        app.globalData.cartList[index].Commodity_currentnum--
+        if(app.globalData.cartList[index].Commodity_currentnum==0){
+          app.globalData.cartList[index].Commodity_flag=false
+          app.globalData.cartList.remove(index)
+        }
+        wx.setStorageSync('cartList', app.globalData.cartList)
+      }
+      this.setData({
+        goodsincart:wx.getStorageSync('cartList')
+      })
+    }
+    if(app.globalData.cartList.length == 0){
+      id.Commodity_flag=true
+      app.globalData.cartList.push(id)
+      wx.setStorageSync('cartList', app.globalData.cartList)
+    }
+    else{
+      
+      console.log('定位index',index)
+      
+      this.countTotalPrice()
+    }
+  },
+  cartAdd(event){
+    let id = event.currentTarget.dataset.id
+    let index = -1
     id.Commodity_currentnum++
     if(app.globalData.cartList.length == 0){
       id.Commodity_flag=true
@@ -161,35 +205,44 @@ Page({
     }
     else{
       for(let idx in app.globalData.cartList){
-        console.log('定位',idx)
+        console.log('定位idx',idx)
         if(app.globalData.cartList[idx]._id==id._id){
           index=idx
         }
       }
-      if(index!=-1){
+      console.log('定位index',index)
+      if(index==-1){
+        id.Commodity_flag=true
+        app.globalData.cartList.push(id)
+        wx.setStorageSync('cartList', app.globalData.cartList)
+      }
+      else{
         app.globalData.cartList[index].Commodity_currentnum++
         wx.setStorageSync('cartList', app.globalData.cartList)
       }
-      app.globalData.carList=
-      wx.setStorageSync('cartList',app.globalData.cartList)
+      this.setData({
+        goodsincart:wx.getStorageSync('cartList')
+      })
+      this.countTotalPrice()
     }
- 
-    // this.setData({
-    //   currentType:index
-    // })
-    // wx.cloud.callFunction({
-    //   name: 'getGoodsForType',
-    //   data: {
-    //     type:id,
-    //   }
-    // }).then(res =>{
-    //     console.log('调用成功',res)
-    //     this.setData({
-    //       goods: res.result.data
-    //     })
-    // }).catch(res=>{
-    //   console.log('失败',res)
-    // })
+  },
+  countTotalPrice(){
+    let temp = 0 
+    let currentnum=0
+    for(let idx in this.data.goodsincart){      
+      temp = temp + this.data.goodsincart[idx].Commodity_currentnum* this.data.goodsincart[idx].Commodity_price
+      currentnum = currentnum+this.data.goodsincart[idx].Commodity_currentnum
+    }
+    console.log('目前总数',temp)
+    this.setData({
+      totalnum:temp,
+      currentnum:currentnum
+    })
+  },
+  toggleDialog() {
+    this.setData({
+    showDialog: !this.data.showDialog
+    });
   },
 })
 

@@ -24,7 +24,7 @@
             <text class="price" style="font-size: 25px;font-weight: 400;">¥ {{item.Commodity_price}}</text>
             <text style="font-size: 15px;width: 170rpx;background-color: rgb(218, 218, 218);">剩余: {{item.Commodity_num}}</text>
             <view class="numAdd">
-            <image src="/image/删减.png"> </image>
+            <image src="/image/删减.png" bindtap="Cartdelete" data-id="{{item}}" data-index="{{index}}"> </image>
             <view>{{item.Commodity_currentnum}}</view>
             <image src="/image/添加.png" bindtap="cartAdd" data-id="{{item}}" data-index="{{index}}" > </image>
           </view>
@@ -34,9 +34,9 @@
     </scroll-view>
   </view>
   <view class="tarBar-buycar">
-    <image src="/image/购物车.png"></image>
-    <text>¥ {{pricenum}}</text>
-    <view class="buycarNum"><text>8</text></view>
+    <image src="/image/购物车.png" bindtap="toggleDialog"></image>
+    <text>¥ {{totalnum}}</text>
+    <view class="buycarNum"><text>{{currentnum}}</text></view>
     <button type="default" >结算</button>
   </view>
   <view class="footer">
@@ -56,5 +56,28 @@
       <image src="/image/me.png" bindtap="gotomy"></image>
       <text>我的</text>
     </view>
+    
   </view>
+  <view class="zan-dialog {{showDialog ? 'zan-dialog--show' : '' }}">
+    <view class="zan-dialog__container">
+      <scroll-view class="cartcontainer" scroll-y="true" >
+        <view  wx:for="{{goodsincart}}" style="display: flex;">
+        <image class="rightimg" src="{{item.Commodity_img}}"></image>
+        <view class="righttext">
+          <view><text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">{{item.Commodity_name}}</text></view>
+          <view><text class="description" >{{item.Commodity_desc}}</text></view>
+          <view style="display: flex; align-items: center;">
+            <text class="price" style="font-size: 25px;font-weight: 400;">¥ {{item.Commodity_price}}</text>
+            <text style="font-size: 15px;width: 170rpx;background-color: rgb(218, 218, 218);">剩余: {{item.Commodity_num}}</text>
+            <view class="numAdd">
+            <image src="/image/删减.png" bindtap="Cartdelete" data-id="{{item}}" data-index="{{index}}"> </image>
+            <view>{{item.Commodity_currentnum}}</view>
+            <image src="/image/添加.png" bindtap="cartAdd" data-id="{{item}}" data-index="{{index}}" > </image>
+          </view>
+          </view>
+        </view>
+      </view>
+      </scroll-view>
+    </view>
+  </view> 
 </view>

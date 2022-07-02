@@ -158,3 +158,27 @@
 .chooseType{
   background-color: white;
 }
+
+  
+ .zan-dialog__container {
+  position: fixed;
+  bottom: 350rpx;
+  width: 750rpx;
+  height: 750rpx;
+  background: #f8f8f8;
+  transform: translateY(300%);
+  transition: all 0.4s ease;
+  z-index: 12;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+ }
+  
+ .zan-dialog--show .zan-dialog__container {
+  transform: translateY(0);
+ }
+ .cartcontainer{
+  width: 750rpx;
+  height: 750rpx;
+  display: flex;
+  flex-direction: column;
+}
