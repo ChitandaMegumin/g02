@@ -17,11 +17,10 @@ App({
   },
   globalData:{
     userInfo:null,
-    cartList:[]
-  },
-  globalData:{
+    cartList:[],
     _id:''
   },
+
 
   gotohome(){
     wx.redirectTo({
