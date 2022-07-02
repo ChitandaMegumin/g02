@@ -1,4 +1,5 @@
 // pages/login/login.js
+const app = getApp()
 Page({
   data: {
     wxhao: 'Apple_4027534',
@@ -51,8 +52,9 @@ Page({
           wx.showToast({
             title: '登录成功！',
           })
+          app.globalData._id=user._id,
           wx.navigateTo({
-            url: '../home/home?user=' + user._id, //登录的时候传一个微信号
+            url: '../home/home?', //登录的时候传一个微信号
           })
         }
         else{

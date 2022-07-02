@@ -1,3 +1,4 @@
+const app = getApp()
 Page({
   onLoad(){
     wx.cloud.callFunction({

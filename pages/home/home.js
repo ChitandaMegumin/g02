@@ -1,12 +1,8 @@
 const app = getApp()
 Page({
   
-  onLoad(userinfo){
-    console.log('userinfo',userinfo)
-    var user=userinfo
-    console.log('user',user.user)
-    app.globalData._id=user.user
-    console.log('user',app.globalData._id)
+  onLoad(){
+    
     wx.cloud.callFunction({
       name:"getCurrentUserName",
       data:{
@@ -30,15 +26,14 @@ Page({
       url: '/pages/goodsselect/goodsselect',
     })
   },
-  gotomy(user){
-    console.log("gotomy",user.currentTarget.dataset.user)
+  gotomy(){
     wx.navigateTo({
-      url: '/pages/my/my?user='+user.currentTarget.dataset.user,
+      url: '/pages/my/my',
     })
   },
-  gotohome(user){
+  gotohome(){
     wx.navigateTo({
-      url: '/pages/home/home?user'+user.currentTarget.dataset.user,
+      url: '/pages/home/home',
     })
   },
   gotoorder(){
