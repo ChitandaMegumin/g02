@@ -7,8 +7,11 @@
   <view class="body">
     <scroll-view class="left" scroll-y="true">
       <view wx:for="{{goodsfortype}}">
-        <image src="{{item.Type_img}}"></image>
-        <text>{{item.Type_name}}</text>
+        <view bindtap="getcurrentIndex" data-id="{{item.Type_name}}" data-index="{{index}}" 
+        class="{{currentType==index?'chooseType':'' }}" style="display: flex; flex-direction: column;" >
+          <image src="{{item.Type_img}}"></image>
+          <text>{{item.Type_name}}</text>
+        </view>
       </view>
     </scroll-view>
     <scroll-view class="right" scroll-y="true">
@@ -17,8 +20,9 @@
         <view class="righttext">
           <view><text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">{{item.Commodity_name}}</text></view>
           <view><text class="description" >{{item.Commodity_desc}}</text></view>
-          <view style="display: flex;">
+          <view style="display: flex; align-items: center;">
             <text class="price" style="font-size: 25px;font-weight: 400;">¥ {{item.Commodity_price}}</text>
+            <text style="font-size: 15px;width: 170rpx;background-color: rgb(218, 218, 218);">剩余: {{item.Commodity_num}}</text>
             <view class="numAdd">
             <image src="/image/删减.png"> </image>
             <view>10</view>
@@ -37,19 +41,19 @@
   </view>
   <view class="footer">
     <view>
-      <image src="/image/allcommodity.png" bindtap="gotohome"></image>
+      <image src="/image/home.png" bindtap="gotohome"></image>
       <text>首页</text>
     </view>
     <view>
-      <image src="/image/allcommodity.png" bindtap="gotogoodsselect"></image>
+      <image src="/image/allgoods.png" bindtap="gotogoodsselect"></image>
       <text>商品分类</text>
     </view>
     <view>
-      <image src="/image/allcommodity.png" bindtap="gotoorder"></image>
+      <image src="/image/dingdan.png" bindtap="gotoorder"></image>
       <text>订单</text>
     </view>
     <view>
-      <image src="/image/allcommodity.png" bindtap="gotomy"></image>
+      <image src="/image/me.png" bindtap="gotomy"></image>
       <text>我的</text>
     </view>
   </view>

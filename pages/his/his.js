@@ -1,24 +1,21 @@
 Page({
 
-  onLoad(Wxhao){
-    console.log('Wxhao',Wxhao)
-    wx.cloud.callFunction({
-      name:"getCurrentUserName",
-      data:{
-        _id:"16db756f62b9449d08afcc12701b1419"
-      }
-    })
+  
+  onLoad(){
+    wx.cloud.database().collection("orders")
+    .doc("ca780ad562bf2db40979515a116b41e7")
+    .get()
     .then(res=>{
-      console.log("当前用户的积分获取成功",res)
+      console.log("获取成功",res)
       this.setData({
-        code:res.result.data
-      }) 
+        order:res.data
+      })
     })
     .catch(err=>{
-      console.log("当前用户的积分获取失败",err)
+      console.log("获取失败",err)
     })
-  },
-
+   },
+    
   gotogoodsselect(){
     wx.navigateTo({
       url: '/pages/goodsselect/goodsselect',
@@ -34,7 +31,13 @@ Page({
       url: '/pages/home/home',
     })
   },
+
   gotoorder(){
+    wx.navigateTo({
+      url: '/pages/order/order',
+    })
+  },
+  gotohis(){
     wx.navigateTo({
       url: '/pages/order/order',
     })
@@ -42,11 +45,6 @@ Page({
   gotopointshop(){
     wx.navigateTo({
       url: '/pages/pointshop/pointshop',
-    })
-  },
-  gotoaddr(){
-    wx.navigateTo({
-      url: '/pages/addr/addr',
     })
   }
 })

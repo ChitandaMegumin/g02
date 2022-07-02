@@ -26,11 +26,13 @@
   line-height:50px;
 
 }
+
 .left view image{
   display: block;
-  margin: 5px auto;
+  margin:  auto ;
   max-width: 50px;
   max-height: 50px;
+  
 
 }
 .rightimg{
@@ -64,7 +66,7 @@
   align-items: center;
   display: flex;
   line-height: 30rpx;
-
+  
 }
 .numAdd image{
   max-width: 50rpx;
@@ -79,15 +81,17 @@
 .left{
   width: 150rpx;
   height: 1000rpx;
- 
+  background-color: rgb(233, 233, 233);
 }
 .left view{
   width: 150rpx;
   height: 150rpx;
   text-align: center;
-
+  
 }
-
+.price{
+  width: 150rpx;
+}
 .right{
   width: 600rpx;
   height: 1000rpx;
@@ -150,4 +154,7 @@
 }
 .footer view text{
   margin-bottom: 5px;
+}
+.chooseType{
+  background-color: white;
 }

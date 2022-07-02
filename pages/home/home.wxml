@@ -58,19 +58,19 @@
 </view>
 <view class="footer">
     <view>
-      <image src="/image/allcommodity.png" bindtap="gotohome"></image>
+      <image src="/image/home.png" bindtap="gotohome"></image>
       <text>首页</text>
     </view>
     <view>
-      <image src="/image/allcommodity.png" bindtap="gotogoodsselect"></image>
+      <image src="/image/allgoods.png" bindtap="gotogoodsselect"></image>
       <text>商品分类</text>
     </view>
     <view>
-      <image src="/image/allcommodity.png" bindtap="gotoorder"></image>
+      <image src="/image/dingdan.png" bindtap="gotoorder"></image>
       <text>订单</text>
     </view>
     <view>
-      <image src="/image/allcommodity.png" bindtap="gotomy"></image>
+      <image src="/image/me.png" bindtap="gotomy"></image>
       <text>我的</text>
     </view>
-  </view>
+</view>

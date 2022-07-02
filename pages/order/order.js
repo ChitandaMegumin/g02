@@ -1,21 +1,21 @@
 Page({
-  // 
+
+  
   onLoad(){
-    wx.cloud.database().collection("customer")
-    .doc("16db756f62b9449d08afcc12701b1417")
+    wx.cloud.database().collection("orders")
+    .doc("0a4ec1f962b7f38f0cb954a572dfd73d")
     .get()
     .then(res=>{
-      console.log("获取用户名成功",res)
+      console.log("获取成功",res)
       this.setData({
-        username:res.data
+        order:res.data
       })
     })
     .catch(err=>{
-      console.log("获取用户名失败",err)
+      console.log("获取失败",err)
     })
+   },
     
-    
-  },
   gotogoodsselect(){
     wx.navigateTo({
       url: '/pages/goodsselect/goodsselect',
@@ -37,7 +37,11 @@ Page({
       url: '/pages/order/order',
     })
   },
-  
+  gotohis(){
+    wx.navigateTo({
+      url: '/pages/his/his',
+    })
+  },
   gotopointshop(){
     wx.navigateTo({
       url: '/pages/pointshop/pointshop',

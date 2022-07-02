@@ -1,7 +1,10 @@
 Page({
   onLoad(){
     wx.cloud.callFunction({
-      name:"getCurrentUserName"
+      name:"getCurrentUserName",
+      data:{
+        _id:"16db756f62b9449d08afcc12701b1419",
+      }
     })
     .then(res=>{
       console.log("获取用户数据成功",res)
@@ -12,7 +15,25 @@ Page({
     .catch(err=>{
       console.log("获取用户数据失败",err)
     })
-  }
+  },
+  update_point(event){
+    var point=event.currentTarget.dataset.user.Customer_point
+    wx.cloud.callFunction({
+      name:"updatePoint",
+      data:{
+        _id:"16db756f62b9449d08afcc12701b1419",
+        data:{
+          Customer_point:point-20
+        }
+      }
+    })
+    .then(res=>{
+      console.log("更新数据成功",res)
+    })
+    .catch(err=>{
+      console.log("更新数据失败",err)
+    })
+    }
   ,
   gotogoodsselect(){
     wx.navigateTo({

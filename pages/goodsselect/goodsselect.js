@@ -9,7 +9,9 @@ Page({
     customer:[],
     goodsfortype:[],
     gettest:[],
-    pricenum:0
+    pricenum:0,
+    goodsintype:[],
+    currentType:0
   },
 
   /**
@@ -91,6 +93,28 @@ Page({
     }).catch(res=>{
       console.log('失败',res)
     })
+  },
+  getcurrentIndex(event){
+    let id = event.currentTarget.dataset.id
+    console.log(id)
+    let index =event.currentTarget.dataset.index
+    this.setData({
+      currentType:index
+    })
+    wx.cloud.callFunction({
+      name: 'getGoodsForType',
+      data: {
+        type:id,
+      }
+    }).then(res =>{
+        console.log('调用成功',res)
+        this.setData({
+          goods: res.result.data
+        })
+    }).catch(res=>{
+      console.log('失败',res)
+    })
+      
   },
   gotohome(){
     wx.redirectTo({
