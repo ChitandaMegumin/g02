@@ -1,14 +1,35 @@
 <view class="page">
 
 
-
-
-
   <view class="option">
     
+      
+      <button class="options_2" bindtap="gotohis">历史订单</button>
       <text class="options_1">当前订单</text>
-      <text class="options_2">当前订单  </text>
-    
+      <!-- <scroll-view class="left" scroll-y="true">
+      <view wx:for="{{order}}">
+        <image src="{{order.Goods_name}}"></image>
+        <text>{{item.Type_name}}</text>
+      </view>
+      </scroll-view> -->
+      <view class="orders">
+        <view class="name">
+          <text wx:if="{{order}}">{{order.Goods_name}}\r\n</text>
+        </view>
+        <view class="time">
+          <text wx:if="{{order}}">{{order.Order_time}}</text>
+        </view>
+        <view class="price">
+          <text wx:if="{{order}}">￥{{order.price}}</text>
+        </view>
+        <button size="mini" class="abutton">
+          取消订单
+        </button>
+        <button size="mini" class="abutton" bindtap="gotogoodsselect">
+          再来一单
+        </button>
+      </view>
+      
   </view>
   
 

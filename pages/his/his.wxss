@@ -149,7 +149,7 @@
   /* border-bottom: 1px;
   border-bottom-style:ridge; */
   background-color: white;
-  color: #DBA871;
+  
   padding-left: 50rpx;
 }
 .options_2{
@@ -162,6 +162,7 @@
   /* border-bottom-style:ridge; */
   background-color: white;
   padding-left: 60rpx;
+  color: #DBA871;
 }
 .orders{
   width: 100%;
