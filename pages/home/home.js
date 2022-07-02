@@ -2,7 +2,6 @@ const app = getApp()
 Page({
   
   onLoad(){
-    
     wx.cloud.callFunction({
       name:"getCurrentUserName",
       data:{

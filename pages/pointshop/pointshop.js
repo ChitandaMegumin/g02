@@ -1,9 +1,10 @@
+const app = getApp()
 Page({
   onLoad(){
     wx.cloud.callFunction({
       name:"getCurrentUserName",
       data:{
-        _id:"16db756f62b9449d08afcc12701b1419",
+        _id:app.globalData._id
       }
     })
     .then(res=>{
@@ -22,7 +23,7 @@ Page({
     wx.cloud.callFunction({
       name:"updatePoint",
       data:{
-        _id:"16db756f62b9449d08afcc12701b1419",
+        _id:app.globalData._id,
         data:{
           Customer_point:point-_point
         }
