@@ -7,6 +7,6 @@ cloud.init({
 
 // 云函数入口函数
 exports.main = async (event, context) => {
-  return cloud.database().collection("customer")
+  return cloud.database().collection("customer").doc(event._id)
   .get()
 }

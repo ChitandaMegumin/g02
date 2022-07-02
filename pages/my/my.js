@@ -1,9 +1,11 @@
+const app = getApp()
 Page({
-  onLoad(){
+  onLoad(user_id){
+    console.log("userid",user_id.user)
     wx.cloud.callFunction({
       name:"getCurrentUserName",
       data:{
-        _id:"16db756f62b9449d08afcc12701b1419"
+        _id:app.globalData._id
       }
     })
     .then(res=>{

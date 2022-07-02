@@ -1,17 +1,23 @@
+const app = getApp()
 Page({
-
-  onLoad(Wxhao){
-    console.log('Wxhao',Wxhao)
+  
+  onLoad(userinfo){
+    console.log('userinfo',userinfo)
+    var user=userinfo
+    console.log('user',user.user)
+    app.globalData._id=user.user
+    console.log('user',app.globalData._id)
     wx.cloud.callFunction({
       name:"getCurrentUserName",
       data:{
-        _id:"16db756f62b9449d08afcc12701b1419"
+        _id:app.globalData._id
       }
     })
     .then(res=>{
       console.log("当前用户的积分获取成功",res)
       this.setData({
         code:res.result.data
+
       }) 
     })
     .catch(err=>{
@@ -24,14 +30,15 @@ Page({
       url: '/pages/goodsselect/goodsselect',
     })
   },
-  gotomy(){
+  gotomy(user){
+    console.log("gotomy",user.currentTarget.dataset.user)
     wx.navigateTo({
-      url: '/pages/my/my',
+      url: '/pages/my/my?user='+user.currentTarget.dataset.user,
     })
   },
-  gotohome(){
+  gotohome(user){
     wx.navigateTo({
-      url: '/pages/home/home',
+      url: '/pages/home/home?user'+user.currentTarget.dataset.user,
     })
   },
   gotoorder(){

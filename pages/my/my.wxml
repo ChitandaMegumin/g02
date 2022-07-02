@@ -91,7 +91,7 @@
 
 <view class="footer">
     <view>
-      <image src="/image/home.png" bindtap="gotohome"></image>
+      <image src="/image/home.png" bindtap="gotohome" data-user="{{username._id}}"></image>
       <text>首页</text>
     </view>
     <view>

@@ -70,7 +70,7 @@
       <text>订单</text>
     </view>
     <view>
-      <image src="/image/me.png" bindtap="gotomy"></image>
+      <image src="/image/me.png" bindtap="gotomy" data-user="{{code._id}}"></image>
       <text>我的</text>
     </view>
 </view>

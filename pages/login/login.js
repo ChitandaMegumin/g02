@@ -52,7 +52,7 @@ Page({
             title: '登录成功！',
           })
           wx.navigateTo({
-            url: '../home/home?Wxhao=' + wxhao, //登录的时候传一个微信号
+            url: '../home/home?user=' + user._id, //登录的时候传一个微信号
           })
         }
         else{

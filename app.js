@@ -8,6 +8,10 @@ App({
       env: 'cloud1-1gwwzozxde8dfbf2' //云开发环境id
     })
   },
+  globalData:{
+    _id:''
+  },
+
   gotohome(){
     wx.redirectTo({
       url: '/pages/home/home',
