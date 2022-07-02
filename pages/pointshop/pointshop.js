@@ -35,6 +35,7 @@ Page({
     .catch(err=>{
       console.log("更新数据失败",err)
     })
+    this.onLoad()
     }
   ,
   gotogoodsselect(){
