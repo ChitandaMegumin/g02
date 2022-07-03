@@ -8,6 +8,9 @@
 
 <view class="userinfo">
   <view class="userinfo_card">
+    <view class="userimage">
+      <image src="{{username.image}}"></image>
+    </view>
     <view class="username">
       <text wx:if="{{username}}">{{username.Customer_name}}</text>
       <view class="ismember">
@@ -81,7 +84,7 @@
   </view>
   <view class="option" bindtap="gotochangeimage">
     <view class="text_box">
-      <text class="option_text">背景图片</text>
+      <text class="option_text">更换头像</text>
     </view>
     <view class="arrow_box">
       <image class="arrow" src="/image/jiantou.png"></image>
