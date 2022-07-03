@@ -13,7 +13,8 @@
     "pages/pointshop/pointshop",
     "pages/addr/addr",
     "pages/addr_edit/addr_edit",
-    "pages/member_code/member_code"
+    "pages/member_code/member_code",
+    "pages/bgc/bgc"
   ],
   "window": {
     "backgroundTextStyle": "light",

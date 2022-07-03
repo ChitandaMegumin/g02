@@ -43,6 +43,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/bgc/bgc",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

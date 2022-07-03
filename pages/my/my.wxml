@@ -79,7 +79,7 @@
       <image class="arrow" src="/image/jiantou.png"></image>
     </view>
   </view>
-  <view class="option">
+  <view class="option" bindtap="gotochangeimage">
     <view class="text_box">
       <text class="option_text">背景图片</text>
     </view>

@@ -1,0 +1,9 @@
+<view>
+  <view class="image_box">
+    <image bindtap="headimage" src='{{userimage}}'></image>
+  </view>
+  <view class="button">
+    <view mode="aspecFill" bindtap="headimage">更换头像</view>
+    <button bindtap="save_image" data-image="{{userimage}}">保存</button>
+  </view>
+</view>

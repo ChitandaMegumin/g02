@@ -1,0 +1,21 @@
+.image_box{
+  height: 300rpx;
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 300rpx;
+}
+.image_box image{
+  width: 250rpx;
+  height: 250rpx;
+}
+.button{
+  position: absolute;
+  top: 600rpx;
+  left: 300rpx;
+}
+.button button{
+  position: absolute;
+  left: -100rpx;
+}

@@ -42,5 +42,10 @@ Page({
     wx.navigateTo({
       url: '/pages/member_code/member_code',
     })
+  },
+  gotochangeimage(){
+    wx.navigateTo({
+      url: '/pages/bgc/bgc',
+    })
   }
 })
