@@ -113,38 +113,9 @@
   font-size: 30rpx;
   color: rgb(143, 143, 143);
 }
-.task{
-  width: 700rpx;
-  height: 250rpx;
-  background-color: white;
-  margin: auto;
-}
-.task_text_box{
-  width: 300rpx;
-  height: 250rpx;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 120rpx;
-}
-.task_text{
-  font-size: 40rpx;
-  color: rgba(92, 92, 92, 0.685);
-  font-weight: bolder ;
-}
-.task_image_box{
-  float: right;
-  margin-top: -30rpx;
-  margin-right: 50rpx;
-}
-.task_image{
-  width: 220rpx;
-  height: 240rpx;
-}
 
 .options{
-  margin-top: 30rpx;
+  margin-top: -20rpx;
   width: 748rpx;
   height: 350rpx;
 
