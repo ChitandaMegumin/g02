@@ -1,0 +1,9 @@
+<view>
+  <view class="image_box">
+    <image bindtap="bg" src='{{userbg}}'></image>
+  </view>
+  <view class="button">
+    <view mode="aspecFill" bindtap="bg">更换背景</view>
+    <button bindtap="save_bg" data-bg="{{userbg}}">保存</button>
+  </view>
+</view>

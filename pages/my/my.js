@@ -47,5 +47,10 @@ Page({
     wx.navigateTo({
       url: '/pages/bgc/bgc',
     })
+  },
+  gotochangebg(){
+    wx.navigateTo({
+      url: '/pages/bg/bg',
+    })
   }
 })

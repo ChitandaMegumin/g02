@@ -14,7 +14,8 @@
     "pages/addr/addr",
     "pages/addr_edit/addr_edit",
     "pages/member_code/member_code",
-    "pages/bgc/bgc"
+    "pages/bgc/bgc",
+    "pages/bg/bg"
   ],
   "window": {
     "backgroundTextStyle": "light",
