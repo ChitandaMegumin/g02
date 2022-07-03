@@ -1,0 +1,38 @@
+/* pages/pay/pay.wxss */
+.paycontainer{
+  width: 750rpx;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.basicinfo{
+  margin: 5px 0;
+  width: 750rpx;
+  height: 310rpx;
+  background-color: aqua;
+}
+.basicinfo>view{
+  margin: 5px 0;
+  width: 750rpx;
+  height: 150rpx;
+  background-color: rgb(204, 0, 255);
+}
+
+.timeslect{
+  margin: 5px 0;
+  width: 750rpx;
+  height: 150rpx;
+  background-color: aqua;
+}
+.goodsinfo{
+  margin: 5px 0;
+  width: 750rpx;
+  height: 600rpx;
+  background-color: aqua;
+}
+.pay{
+  width: 750rpx;
+  height: 200rpx;
+  background-color: aqua;
+}

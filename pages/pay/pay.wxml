@@ -1,0 +1,20 @@
+<!--pages/pay/pay.wxml-->
+<view class="paycontainer">
+  <view class="basicinfo">
+    <view class="address">
+      <text>🏬 国际花城小卖部</text>
+    </view>
+    <view class="telephone">
+      <text>联系电话：17858411136</text>
+    </view>
+  </view>
+  <view class="timeslect">
+    <text>这里是时间选择器</text>
+  </view>
+  <view class="goodsinfo">
+    <text>这里是商品货物</text>
+  </view>
+  <view class="pay">
+    <text>这里是支付入口</text>
+  </view>
+</view>

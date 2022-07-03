@@ -4,53 +4,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/pointshop/pointshop",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/home/home",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/my/my",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/order/order",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/addr_edit/addr_edit",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/member_code/member_code",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-<<<<<<< Updated upstream
-          "pathName": "pages/bgc/bgc",
-=======
-          "pathName": "pages/goodsselect/goodsselect",
->>>>>>> Stashed changes
+          "pathName": "pages/pay/pay",
           "query": "",
           "launchMode": "default",
           "scene": null

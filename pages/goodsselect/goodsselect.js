@@ -213,8 +213,17 @@ Page({
         wx.setStorageSync('cartList', app.globalData.cartList)
       }
       else{
-        app.globalData.cartList[index].Commodity_currentnum++
-        wx.setStorageSync('cartList', app.globalData.cartList)
+        if(id.Commodity_num<app.globalData.cartList[index].Commodity_currentnum+1){
+          wx.showToast({
+            title: '数量不能再多啦！',
+            icon: 'none',
+            duration: 1500
+          })
+        }
+        else{
+          app.globalData.cartList[index].Commodity_currentnum++
+          wx.setStorageSync('cartList', app.globalData.cartList)
+        }
       }
       this.setData({
         goodsincart:wx.getStorageSync('cartList')
