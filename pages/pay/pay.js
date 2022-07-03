@@ -7,8 +7,9 @@ Page({
   data: {
     time: '12:00',
     goodsincart:[],
-    totalnum:0
-    
+    totalnum:0,
+    totalprice:0
+
   },
 
   /**
@@ -85,7 +86,15 @@ Page({
     }
     console.log('目前总数',temp)
     this.setData({
-      totalnum:temp,
+      totalnum:currentnum,
+      totalprice:temp.toFixed(2)
+    })
+  },
+  gotopay(){
+    wx.showToast({
+      title: '支付成功！',
+      icon: 'success',
+      duration: 1500
     })
   }
 })

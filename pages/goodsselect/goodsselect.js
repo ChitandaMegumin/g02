@@ -128,6 +128,12 @@ Page({
       
     })
   },
+  gotopay(){
+    wx.navigateTo({
+      url: '/pages/pay/pay',
+
+    })
+  },
   gotogoodsselect(){
     wx.redirectTo({
       url: '/pages/goodsselect/goodsselect',
@@ -240,7 +246,7 @@ Page({
     }
     console.log('目前总数',temp)
     this.setData({
-      totalnum:temp,
+      totalnum:temp.toFixed(2),
       currentnum:currentnum
     })
   },

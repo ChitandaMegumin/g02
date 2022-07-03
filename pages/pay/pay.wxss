@@ -13,7 +13,7 @@
   
 }
 .basicinfo>view{
-  margin: 5px 0;
+  margin: 5px auto;
   width: 750rpx;
   height: 130rpx;
   background-color: white;
@@ -22,7 +22,9 @@
   margin: 5px 0;
   width: 750rpx;
   height: 130rpx;
-  background-color: rgb(131, 81, 81);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-end;
 }
 .basicinfo>view:nth-child(1) text{
   line-height: 130rpx;
@@ -34,13 +36,12 @@
   margin-left: 5px;
 }
 .timeselect{
-  margin: 5px 0;
   width: 750rpx;
   height: 150rpx;
   background-color: white;
 }
 .goodsinfo{
-  margin: 5px 0;
+ 
   width: 750rpx;
   height: 600rpx;
   background-color: white;
@@ -49,8 +50,16 @@
   width: 750rpx;
   height: 200rpx;
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
-
+.pay>view:nth-child(1) view{
+  width: 200rpx;
+  height: 100rpx;
+ 
+  line-height: 100rpx;
+  text-align: center;
+}
 .cartcontainer{
   width: 750rpx;
   height: 750rpx;
@@ -81,11 +90,7 @@
   line-height: 30rpx;
   
 }
-.numAdd image{
-  max-width: 50rpx;
-  max-height: 50rpx;
 
-}
 .right text{
  margin: 0 5px;
 }
@@ -94,4 +99,11 @@
   overflow: hidden;
   color: gray;
   font-size: 15px;
+}
+
+.totalnum view{
+  width: 400rpx;
+  height: 130rpx;
+  line-height: 130rpx;
+  text-align: center;
 }

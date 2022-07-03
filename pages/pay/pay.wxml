@@ -19,7 +19,7 @@
   </view>
   <view class="goodsinfo">
     <scroll-view  class="cartcontainer" scroll-y="true">
-      <view  wx:for="{{goodsincart}}" style="display: flex;width: 750rpx;margin: 5px auto;background-color: rgb(238, 225, 225);">
+      <view  wx:for="{{goodsincart}}" style="display: flex;width: 750rpx;margin: 5px auto;background-color: rgb(255, 255, 255);">
         <image class="rightimg" src="{{item.Commodity_img}}"></image>
         <view class="righttext">
           <view><text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">{{item.Commodity_name}}</text></view>
@@ -36,9 +36,13 @@
     
   </view>
   <view class="totalnum">
-      <view style="margin-right: 20rpx;">合计：{{totalnum}} </view>
+      <view >共 {{totalnum}} 件商品 合计：{{totalprice}} </view>
   </view>
   <view class="pay">
-    <text>这里是支付入口</text>
+    <view style="display: flex; justify-content: space-between;">
+      <view>支付方式</view>
+      <view>支付宝 ></view>
+    </view >
+    <view style="display: flex;justify-content: flex-end;background-color:rgb(238, 238, 238);line-height: 100rpx;">合计：{{totalprice}}  <button type="default"   bindtap="gotopay" style="color: black;width: 200rpx; background-color: white;margin: 5px;">支付</button></view>
   </view>
 </view>

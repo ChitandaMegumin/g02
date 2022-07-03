@@ -37,7 +37,7 @@
     <image src="/image/购物车.png" bindtap="toggleDialog"></image>
     <text>¥ {{totalnum}}</text>
     <view class="buycarNum"><text>{{currentnum}}</text></view>
-    <button type="default" >结算</button>
+    <button type="default"  bindtap="gotopay">结算</button>
   </view>
   <view class="footer">
     <view>
