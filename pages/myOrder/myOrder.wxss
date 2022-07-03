@@ -1,0 +1,48 @@
+.menu-wrap{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 20rpx;
+  padding: 20rpx 0rpx;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #eee;
+}
+
+/* .menu-item{
+
+} */
+
+.good-bottom{
+  display: flex;
+  flex-direction: row;
+  width: 500rpx;
+  justify-content: space-between;
+  margin-top: 60rpx;
+}
+
+.order-wrap{
+  margin: 20rpx 20rpx;
+  border: 1rpx solid #eee;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+.good-wrap{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15rpx;
+}
+.good-img{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+
+.order-id{
+  font-size: 28rpx;
+  margin-bottom: 15rpx;
+}
+
+.choose-type{
+  border-bottom: 5rpx solid red;
+  padding-bottom: 20rpx;
+}

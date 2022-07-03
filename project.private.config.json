@@ -5,6 +5,23 @@
         {
           "name": "",
           "pathName": "pages/pay/pay",
+<<<<<<< Updated upstream
+=======
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/myOrder/myOrder",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/goodsselect/goodsselect",
+>>>>>>> Stashed changes
           "query": "",
           "launchMode": "default",
           "scene": null
