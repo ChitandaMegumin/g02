@@ -35,9 +35,13 @@ Page({
     .catch(err=>{
       console.log("更新数据失败",err)
     })
-    setTimeout(this.onLoad,200 );
-    }
-  ,
+    setTimeout(this.gotomyhome,300)  
+    },
+  gotomyhome(){
+    wx.reLaunch({
+      url: '/pages/home/home',
+    })
+  },
   gotogoodsselect(){
     wx.navigateTo({
       url: '/pages/goodsselect/goodsselect',

@@ -14,23 +14,12 @@
     "pages/pointshop/pointshop",
     "pages/addr/addr",
     "pages/addr_edit/addr_edit",
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-    "pages/member_code/member_code"
-    
-=======
->>>>>>> Stashed changes
     "pages/member_code/member_code",
     "pages/bgc/bgc",
     "pages/bg/bg",
     "pages/pay/pay",
     "pages/task/task"
 
-<<<<<<< Updated upstream
-=======
->>>>>>> a6f0c11a336b931cb0135e6b426c0b787969d1e4
->>>>>>> Stashed changes
   ],
   "window": {
     "backgroundTextStyle": "light",
