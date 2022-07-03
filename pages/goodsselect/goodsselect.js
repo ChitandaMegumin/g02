@@ -174,7 +174,7 @@ Page({
         app.globalData.cartList[index].Commodity_currentnum--
         if(app.globalData.cartList[index].Commodity_currentnum==0){
           app.globalData.cartList[index].Commodity_flag=false
-          app.globalData.cartList.remove(index)
+          app.globalData.cartList.splice(index,1)
         }
         wx.setStorageSync('cartList', app.globalData.cartList)
       }
@@ -182,26 +182,22 @@ Page({
         goodsincart:wx.getStorageSync('cartList')
       })
     }
-    if(app.globalData.cartList.length == 0){
-      id.Commodity_flag=true
-      app.globalData.cartList.push(id)
-      wx.setStorageSync('cartList', app.globalData.cartList)
-    }
-    else{
-      
-      console.log('定位index',index)
-      
-      this.countTotalPrice()
-    }
+    this.countTotalPrice()
+
   },
   cartAdd(event){
     let id = event.currentTarget.dataset.id
     let index = -1
     id.Commodity_currentnum++
+
     if(app.globalData.cartList.length == 0){
       id.Commodity_flag=true
       app.globalData.cartList.push(id)
       wx.setStorageSync('cartList', app.globalData.cartList)
+      this.setData({
+        goodsincart:wx.getStorageSync('cartList')
+      })
+      this.countTotalPrice()
     }
     else{
       for(let idx in app.globalData.cartList){

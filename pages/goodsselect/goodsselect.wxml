@@ -65,7 +65,7 @@
         <image class="rightimg" src="{{item.Commodity_img}}"></image>
         <view class="righttext">
           <view><text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">{{item.Commodity_name}}</text></view>
-          <view><text class="description" >{{item.Commodity_desc}}</text></view>
+          <view class="description"><text  >{{item.Commodity_desc}}</text></view>
           <view style="display: flex; align-items: center;">
             <text class="price" style="font-size: 25px;font-weight: 400;">¥ {{item.Commodity_price}}</text>
             <text style="font-size: 15px;width: 170rpx;background-color: rgb(218, 218, 218);">剩余: {{item.Commodity_num}}</text>

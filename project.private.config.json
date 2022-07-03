@@ -46,7 +46,11 @@
         },
         {
           "name": "",
+<<<<<<< Updated upstream
           "pathName": "pages/bgc/bgc",
+=======
+          "pathName": "pages/goodsselect/goodsselect",
+>>>>>>> Stashed changes
           "query": "",
           "launchMode": "default",
           "scene": null
