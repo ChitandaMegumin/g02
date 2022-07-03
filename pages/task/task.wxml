@@ -1,0 +1,52 @@
+<view>
+
+  <view class="dailytask">
+    <text>每日任务</text>
+  </view>
+  <view class="task_board">
+    <view class="task_item">
+      <view class="task_item_left">
+        <text>每日登录</text>
+      </view>
+      <view class="task_item_right">
+        <view class="task_finish" wx:if="{{usertask}}">
+          <button>领取</button>
+        </view>
+        <view class="task_unfinish" wx:else="{{!usertask}}">
+          <text>未完成</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="task_item">
+      <view class="task_item_left">
+        <text>每日下单</text>
+      </view>
+      <view class="task_item_right">
+        <view class="task_finish" wx:if="{{usertask}}">
+          <button>领取</button>
+        </view>
+        <view class="task_unfinish" wx:else="{{!usertask}}">
+          <text>未完成</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="task_item">
+      <view class="task_item_left">
+        <text>评价订单</text>
+      </view>
+      <view class="task_item_right">
+        <view class="task_finish" wx:if="{{usertask}}">
+          <button>领取</button>
+        </view>
+        <view class="task_unfinish" wx:else="{{!usertask}}">
+          <text>未完成</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+</view>

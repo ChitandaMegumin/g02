@@ -1,0 +1,59 @@
+.dailytask{
+  width: 700rpx;
+  height: 100rpx;
+  margin: auto;
+}
+.dailytask text{
+  width: 100rpx;
+  height: 40rpx;
+  font-size: 29rpx;
+  color: rgba(69, 93, 138, 0.726);
+  position: relative;
+  top: 60rpx;
+}
+.task_board{
+  width: 700rpx;
+  height: 400rpx;
+  margin: auto;
+}
+.task_item{
+  border-bottom-width: 1rpx;
+  border-bottom-style: ridge;
+  width: 700rpx;
+  height: 100rpx;
+}
+.task_item_left{
+  width: 397rpx;
+  height: 100rpx;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.task_item_right{
+  width: 297rpx;
+  height: 100rpx;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.task_item_left text{
+  font-size: 30rpx;
+  color: rgb(97, 97, 97);
+  margin-left: 40rpx;
+}
+.task_finish{
+  width: 100rpx;
+  height: 40rpx;
+  margin: auto;
+}
+.task_unfinish{
+  width: 100rpx;
+  height: 40rpx;
+  margin: auto;
+}
+.task_unfinish text{
+  color: rgb(122, 121, 121);
+  font-size: 25rpx;
+}

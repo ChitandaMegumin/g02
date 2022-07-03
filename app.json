@@ -15,11 +15,9 @@
     "pages/addr_edit/addr_edit",
     "pages/member_code/member_code",
     "pages/bgc/bgc",
-<<<<<<< Updated upstream
-    "pages/bg/bg"
-=======
-    "pages/pay/pay"
->>>>>>> Stashed changes
+    "pages/bg/bg",
+    "pages/pay/pay",
+    "pages/task/task"
   ],
   "window": {
     "backgroundTextStyle": "light",
