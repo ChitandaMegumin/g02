@@ -2,6 +2,7 @@
 .container1{
   width: 750rpx;
   height: auto;
+  
 }
 .header{
   width: 750rpx;

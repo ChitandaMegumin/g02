@@ -4,15 +4,39 @@
     <view class="address">
       <text>🏬 国际花城小卖部</text>
     </view>
-    <view class="telephone">
+    <view class="telephone">  
       <text>联系电话：17858411136</text>
     </view>
   </view>
-  <view class="timeslect">
-    <text>这里是时间选择器</text>
+  <view class="timeselect">
+    <view class="section">
+      <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+        <view class="picker" style="line-height: 130rpx; margin-left: 5px;">
+          请选择配送时间: {{time}}
+        </view>
+      </picker>
+    </view>
   </view>
   <view class="goodsinfo">
-    <text>这里是商品货物</text>
+    <scroll-view  class="cartcontainer" scroll-y="true">
+      <view  wx:for="{{goodsincart}}" style="display: flex;width: 750rpx;margin: 5px auto;background-color: rgb(238, 225, 225);">
+        <image class="rightimg" src="{{item.Commodity_img}}"></image>
+        <view class="righttext">
+          <view><text class="title" style="font-size: 25px;color: black;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 550;">{{item.Commodity_name}}</text></view>
+          <view class="description"><text  >{{item.Commodity_desc}}</text></view>
+          <view style="display: flex; align-items: center;">
+            <text class="price" style="font-size: 25px;font-weight: 400;margin: auto 5px;">¥ {{item.Commodity_price}}</text>    
+            <view class="numAdd">
+              <view>数量：{{item.Commodity_currentnum}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    
+  </view>
+  <view class="totalnum">
+      <view style="margin-right: 20rpx;">合计：{{totalnum}} </view>
   </view>
   <view class="pay">
     <text>这里是支付入口</text>

@@ -4,35 +4,94 @@
   height: auto;
   display: flex;
   flex-direction: column;
- 
+  background-color:rgb(238, 238, 238);
 }
 .basicinfo{
-  margin: 5px 0;
+
   width: 750rpx;
-  height: 310rpx;
-  background-color: aqua;
+  height: 29  0rpx;
+  
 }
 .basicinfo>view{
   margin: 5px 0;
   width: 750rpx;
-  height: 150rpx;
-  background-color: rgb(204, 0, 255);
+  height: 130rpx;
+  background-color: white;
 }
-
-.timeslect{
+.totalnum{
+  margin: 5px 0;
+  width: 750rpx;
+  height: 130rpx;
+  background-color: rgb(131, 81, 81);
+}
+.basicinfo>view:nth-child(1) text{
+  line-height: 130rpx;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.basicinfo>view:nth-child(2) text{
+  line-height: 130rpx;
+  margin-left: 5px;
+}
+.timeselect{
   margin: 5px 0;
   width: 750rpx;
   height: 150rpx;
-  background-color: aqua;
+  background-color: white;
 }
 .goodsinfo{
   margin: 5px 0;
   width: 750rpx;
   height: 600rpx;
-  background-color: aqua;
+  background-color: white;
 }
 .pay{
   width: 750rpx;
   height: 200rpx;
-  background-color: aqua;
+  background-color: white;
+}
+
+.cartcontainer{
+  width: 750rpx;
+  height: 750rpx;
+  display: flex;
+  flex-direction: column;
+  
+}
+.rightimg{
+  margin:5px auto;
+  max-width: 120rpx;
+  max-height: 150rpx;
+}
+.right view{
+  display: flex;
+
+}
+.righttext{
+  display: flex;
+  flex-direction: column;
+  width: 500rpx;
+
+}
+.numAdd{
+  width: 200rpx;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  line-height: 30rpx;
+  
+}
+.numAdd image{
+  max-width: 50rpx;
+  max-height: 50rpx;
+
+}
+.right text{
+ margin: 0 5px;
+}
+.description{
+  height: 65rpx;
+  overflow: hidden;
+  color: gray;
+  font-size: 15px;
 }

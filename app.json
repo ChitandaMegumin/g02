@@ -18,6 +18,7 @@
     "pages/bg/bg",
     "pages/pay/pay",
     "pages/task/task"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
