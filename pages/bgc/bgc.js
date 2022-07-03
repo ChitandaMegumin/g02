@@ -39,6 +39,9 @@ Page({
     .catch(err=>{
       console.log("保存照片失败",err)
     })
+    wx.navigateTo({
+      url: '/pages/my/my',
+    })
   },
   
   data:{
