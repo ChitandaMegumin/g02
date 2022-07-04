@@ -47,6 +47,13 @@ Page({
         console.log('获取数据成功',res)
         let user = res.data[0]
         console.log('user', user)
+        if(user==undefined){
+          wx.showToast({
+            icon: 'error',
+            title: '账号错误！'
+          })
+          return
+        }
         if(password==user.Customer_password){
           console.log('登录成功')
           wx.showToast({
