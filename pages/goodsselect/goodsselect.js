@@ -23,8 +23,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad (options){
-      this.getGoods()
-      this.getType()
       
   },
 
@@ -39,7 +37,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    
+    this.getGoods()
+    this.getType()
+    this.getGoodsInCart()
+    this.countTotalPrice()
   },
 
   /**
@@ -264,6 +265,10 @@ Page({
     showDialog: !this.data.showDialog
     });
   },
-  
+  getGoodsInCart(){
+    this.setData({
+      goodsincart:wx.getStorageSync('cartList')
+    })
+  }
 })
 

@@ -109,13 +109,14 @@ Page({
         console.log('失败',res)
       })
     }
-    wx.removeStorageSync('cartList')
-    while(app.globalData.cartList.length){
-      app.globalData.cartList.splice(0, 1)
-    }
+    // 先注释了，等订单写好
+    // wx.removeStorageSync('cartList')
+    // while(app.globalData.cartList.length){
+    //   app.globalData.cartList.splice(0, 1)
+    // }
     setTimeout(() => {   
       wx.redirectTo({
-        url: '/pages/home/home',
+        url: '/pages/order/order',
       })
       },1500)
     }
