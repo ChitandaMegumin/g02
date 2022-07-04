@@ -20,12 +20,16 @@ Page({
   update_point(event){
     var point=event.currentTarget.dataset.user.Customer_point
     var _point=event.currentTarget.dataset.point
+    var discountpoint=0  
+    if(_point==20) discountpoint=0.98
+    else if(_point==30) discountpoint=0.95
     wx.cloud.callFunction({
       name:"updatePoint",
       data:{
         _id:app.globalData._id,
         data:{
-          Customer_point:point-_point
+          Customer_point:point-_point,
+          Customer_discount:discountpoint
         }
       }
     })
