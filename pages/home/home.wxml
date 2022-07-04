@@ -27,12 +27,12 @@
     </view>
   </view>
   <view class="advertisement">
-    <view class="discount">
+    <view class="discount" bindtap="gotoexpress">
       <view class="advertisement_image_box">
         <image class="advertisement_image" src="/image/discountonlytoday.png"></image>
       </view>
-      <text class="advertisement_text">限时优惠</text>
-      <text class="advertisement_text_2">快来抢购！！</text>
+      <text class="advertisement_text">快递代收</text>
+      <text class="advertisement_text_2">每日8：00-20：00</text>
     </view>
     <view class="snacks">
       <view class="advertisement_image_box">

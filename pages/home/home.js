@@ -54,5 +54,10 @@ Page({
     wx.navigateTo({
       url: '/pages/member_code/member_code',
     })
+  },
+  gotoexpress(){
+    wx.navigateTo({
+      url: '/pages/express/express',
+    })
   }
 })

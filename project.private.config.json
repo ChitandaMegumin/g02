@@ -4,31 +4,14 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/pay/pay",
-<<<<<<< Updated upstream
-=======
+          "pathName": "pages/home/home",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/myOrder/myOrder",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/goodsselect/goodsselect",
->>>>>>> Stashed changes
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/member_code/member_code",
+          "pathName": "pages/express/express",
           "query": "",
           "launchMode": "default",
           "scene": null

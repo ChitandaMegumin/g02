@@ -1,0 +1,41 @@
+.express{
+  width: 200rpx;
+  height: 40rpx;
+  position: relative;
+  top: 80rpx;
+  left: 60rpx;
+}
+.express text{
+  color:rgb(100, 67, 5);
+  font-size: 30rpx;
+}
+.search{
+  border-style: ridge;
+  border-width: 3rpx;
+  width: 450rpx;
+  height: 60rpx;
+  float: left;
+  margin: 100rpx 0 0 80rpx;
+}
+.search_button button{
+  width: 140rpx;
+  height: 60rpx;
+  font-size: 25rpx;
+  color: white;
+  background-color: red;
+  margin-top: 100rpx;
+  margin-left: 0;
+  float: inline-start;
+}
+.information{
+  position: relative;
+  top: 40rpx;
+  left: 25rpx;
+  width: 700rpx;
+  height: 400rpx;
+  display: flex;
+  justify-content: left;
+}
+.information text{
+  color: purple;
+}

@@ -18,7 +18,8 @@
     "pages/bgc/bgc",
     "pages/bg/bg",
     "pages/pay/pay",
-    "pages/task/task"
+    "pages/task/task",
+    "pages/express/express"
 
   ],
   "window": {

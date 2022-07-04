@@ -1,0 +1,16 @@
+<view>
+  <view class="search_button">
+    <view class="express">
+      <text>您的快递单号:</text>
+    </view>
+    <input class="search" bindinput="getexid" type="text"/>
+    <button class="button" bindtap="tosearch" data-ex_id="express_id">搜索</button>
+  </view>
+  <view class="information" wx:if="{{express.result.data[0]}}">
+
+      <text>快递编号：{{express.result.data[0].id}}\n到站时间：{{express.result.data[0].inTime}}\n快递状态（在站内）：{{express.result.data[0].status}}\n快递所有者：{{express.result.data[0].owner_name}}\n快递所有者尾号：{{express.result.data[0].phone_last4}}</text>
+  </view>
+  <view class="information" wx:else="{{!express.result.data[0]}}">
+    <text>暂无该快递单号信息</text>
+  </view>
+</view>
