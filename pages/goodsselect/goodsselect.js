@@ -129,10 +129,19 @@ Page({
     })
   },
   gotopay(){
-    wx.navigateTo({
+    if(this.data.goodsincart.length==0){
+      wx.showToast({
+        title: '购物车内没有商品！',
+        icon: 'none',
+        duration: 1500
+      })
+    }
+    else{
+      wx.navigateTo({
       url: '/pages/pay/pay',
-
     })
+    }
+    
   },
   gotogoodsselect(){
     wx.redirectTo({
@@ -255,5 +264,6 @@ Page({
     showDialog: !this.data.showDialog
     });
   },
+  
 })
 

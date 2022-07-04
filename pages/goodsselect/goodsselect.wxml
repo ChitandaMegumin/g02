@@ -24,8 +24,6 @@
             <text class="price" style="font-size: 25px;font-weight: 400;">¥ {{item.Commodity_price}}</text>
             <text style="font-size: 15px;width: 170rpx;background-color: rgb(218, 218, 218);">剩余: {{item.Commodity_num}}</text>
             <view class="numAdd">
-            <image src="/image/删减.png" bindtap="Cartdelete" data-id="{{item}}" data-index="{{index}}"> </image>
-            <view>{{item.Commodity_currentnum}}</view>
             <image src="/image/添加.png" bindtap="cartAdd" data-id="{{item}}" data-index="{{index}}" > </image>
           </view>
           </view>

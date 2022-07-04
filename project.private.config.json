@@ -25,6 +25,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/member_code/member_code",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

@@ -1,4 +1,5 @@
 // pages/pay/pay.js
+const app =getApp()
 Page({
 
   /**
@@ -90,11 +91,32 @@ Page({
       totalprice:temp.toFixed(2)
     })
   },
-  gotopay(){
+  gotopay(event){
     wx.showToast({
       title: '支付成功！',
       icon: 'success',
       duration: 1500
     })
-  }
+    for(let idx in this.data.goodsincart){      
+      wx.cloud.callFunction({
+        name: 'updateGoodsNum',
+        data: {
+          goods:this.data.goodsincart[idx],
+        }
+      }).then(res =>{
+          console.log('调用成功',res)
+      }).catch(res=>{
+        console.log('失败',res)
+      })
+    }
+    wx.removeStorageSync('cartList')
+    while(app.globalData.cartList.length){
+      app.globalData.cartList.splice(0, 1)
+    }
+    setTimeout(() => {   
+      wx.redirectTo({
+        url: '/pages/home/home',
+      })
+      },1500)
+    }
 })
