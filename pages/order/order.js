@@ -7,20 +7,15 @@ Page({
 
   onLoad(options) {
     wx.cloud.database().collection('orders')
-    .where({
-      Order_status:1
-    })
-    .get()
-    .then(res=>{
-      console.log(res)
-      this.setData({
-        List:res.data
+      .where({
+        status:1
       })
-    })
-    this.setData({
-      orderList:wx.getStorageSync('cartList')
-    })
-    console.log(wx.getStorageSync('cartList'))
+      .get()
+      .then(res=>{
+        this.setData({
+          orderList:res.data
+        })
+      })
   },
   getGoodsInCart(){
     this.setData({

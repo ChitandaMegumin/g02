@@ -97,6 +97,15 @@ Page({
       icon: 'success',
       duration: 1500
     })
+    wx.cloud.database().collection('orders').add({
+      data:{
+        name:"Apple_4027534",
+        goods:wx.getStorageSync('cartList'),
+        status:0
+      }
+    }).then(res=>{
+      console.log(res)
+    })
     for(let idx in this.data.goodsincart){      
       wx.cloud.callFunction({
         name: 'updateGoodsNum',
@@ -109,15 +118,15 @@ Page({
         console.log('失败',res)
       })
     }
-    // 先注释了，等订单写好
-    // wx.removeStorageSync('cartList')
-    // while(app.globalData.cartList.length){
-    //   app.globalData.cartList.splice(0, 1)
-    // }
+    wx.removeStorageSync('cartList')
+    while(app.globalData.cartList.length){
+      app.globalData.cartList.splice(0, 1)
+    }
     setTimeout(() => {   
       wx.redirectTo({
-        url: '/pages/order/order',
+        url: '/pages/myOrder/myOrder',
       })
       },1500)
-    }
+    },
+    
 })
