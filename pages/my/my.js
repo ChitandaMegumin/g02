@@ -28,6 +28,11 @@ Page({
       url: '/pages/my/my',
     })
   },
+  gotoorder(){
+    wx.redirectTo({
+      url: '/pages/myOrder/myOrder',
+    })
+  },
   gotohome(){
     wx.navigateTo({
       url: '/pages/home/home',

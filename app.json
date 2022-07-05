@@ -20,7 +20,6 @@
     "pages/pay/pay",
     "pages/task/task",
     "pages/express/express"
-
   ],
   "window": {
     "backgroundTextStyle": "light",

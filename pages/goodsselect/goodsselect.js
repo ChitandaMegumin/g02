@@ -151,7 +151,7 @@ Page({
   },
   gotoorder(){
     wx.redirectTo({
-      url: '/pages/order/order',
+      url: '/pages/myOrder/myOrder',
     })
   },
   gotomy(){

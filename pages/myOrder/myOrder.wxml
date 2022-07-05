@@ -1,14 +1,13 @@
 <view class="menu-wrap">
   <view class="menu-item {{Order_status==0?'choose-type':''}}" bindtap="choooType" data-type="0">待收货</view>
-  <view class="menu-item {{Order_status==1?'choose-type':''}}" bindtap="choooType" data-type="0">待发货</view>
-  <view class="menu-item {{Order_status==2?'choose-type':''}}" bindtap="choooType" data-type="0">已完成</view>
+  <view class="menu-item {{Order_status==1?'choose-type':''}}" bindtap="gotocom" data-type="0">已完成</view>
 </view>
 
 <block wx:for="{{orderList}}">
   <view class="order-wrap">
-    <!-- <view class="order-id">订单号:{{item._id}}</view> -->
+    <view class="order-id" >订单号:{{item._id}}</view>
     <!-- <block wx:for="{{item.goods}}" wx:for-item="good"> -->
-      <view class="good-wrap">
+      <!-- <view class="good-wrap">
         <image class="good-img" src="{{item.Order_img}}"></image>
         <view>
           <view>{{item.Goods_name}}</view>
@@ -17,9 +16,30 @@
             <view>X{{item.Order_commodnum}}</view>
           </view>
         </view>
-      </view>
+      </view> -->
     <!-- </block> -->
-    <view>合计:{{item.price}}</view>
+    <view>合计:￥{{item.price}}</view>
     <view>时间:{{item.Order_time}}</view>
-  </view>
+  <button class="button" bindtap="gotopay">更改订单</button>
+  </view> 
 </block>
+
+
+<view class="footer">
+    <view>
+      <image src="/image/home.png" bindtap="gotohome"></image>
+      <text>首页</text>
+    </view>
+    <view>
+      <image src="/image/allgoods.png" bindtap="gotogoodsselect"></image>
+      <text>商品分类</text>
+    </view>
+    <view>
+      <image src="/image/dingdan.png" bindtap="gotoorder"></image>
+      <text>订单</text>
+    </view>
+    <view>
+      <image src="/image/me.png" bindtap="gotomy" data-user="{{code._id}}"></image>
+      <text>我的</text>
+    </view>
+</view>

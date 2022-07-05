@@ -37,7 +37,7 @@ Page({
   },
   gotoorder(){
     wx.navigateTo({
-      url: '/pages/order/order',
+      url: '/pages/myOrder/myOrder',
     })
   },
   gotopointshop(){

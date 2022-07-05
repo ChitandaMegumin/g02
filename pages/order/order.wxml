@@ -1,39 +1,27 @@
-<view class="page">
+<view class="menu-wrap" >
+  <view class="menu-item {{Order_status==0?'choose-type':''}}" bindtap="gotoorder" data-type="0">待收货</view>
+  <view class="menu-item {{Order_status==1?'choose-type':''}}" bindtap="choooType" data-type="0">已完成</view>
+</view>
 
-
-  <view class="option">
-    
-      
-      <button class="options_2" bindtap="gotohis">历史订单</button>
-      <text class="options_1">当前订单</text>
-      <!-- <scroll-view class="left" scroll-y="true">
-      <view wx:for="{{order}}">
-        <image src="{{order.Goods_name}}"></image>
-        <text>{{item.Type_name}}</text>
-      </view>
-      </scroll-view> -->
-      <view class="orders">
-        <view class="name">
-          <text wx:if="{{order}}">{{order.Goods_name}}\r\n</text>
+<block wx:for="{{orderList}}">
+  <view class="order-wrap" bindtap="gotopay">
+    <view class="order-id" >订单号:{{item._id}}</view>
+    <!-- <block wx:for="{{item.goods}}" wx:for-item="good"> -->
+      <!-- <view class="good-wrap">
+        <image class="good-img" src="{{item.Order_img}}"></image>
+        <view>
+          <view>{{item.Goods_name}}</view>
+          <view class="good-bottom">
+            <view>￥{{item.Order_commodprice}}</view>
+            <view>X{{item.Order_commodnum}}</view>
+          </view>
         </view>
-        <view class="time">
-          <text wx:if="{{order}}">{{order.Order_time}}</text>
-        </view>
-        <view class="price">
-          <text wx:if="{{order}}">￥{{order.price}}</text>
-        </view>
-        <button size="mini" class="abutton">
-          取消订单
-        </button>
-        <button size="mini" class="abutton" bindtap="gotogoodsselect">
-          再来一单
-        </button>
-      </view>
-      
+      </view> -->
+    <!-- </block> -->
+    <view>合计:￥{{item.price}}</view>
+    <view>时间:{{item.Order_time}}</view>
   </view>
-  
-
-  
+</block>
 
 
 <view class="footer">
@@ -50,10 +38,7 @@
       <text>订单</text>
     </view>
     <view>
-      <image src="/image/me.png" bindtap="gotomy"></image>
+      <image src="/image/me.png" bindtap="gotomy" data-user="{{code._id}}"></image>
       <text>我的</text>
     </view>
-  </view>
-
-
 </view>

@@ -1,21 +1,23 @@
+// pages/myOrder/myOrder.js
 Page({
 
-  
-  onLoad(){
-    wx.cloud.database().collection("orders")
-    .doc("0a4ec1f962b7f38f0cb954a572dfd73d")
+  data: {
+      Order_status:1
+  },
+
+  onLoad(options) {
+    wx.cloud.database().collection('orders')
+    .where({
+      Order_status:1
+    })
     .get()
     .then(res=>{
-      console.log("获取成功",res)
+      console.log(res)
       this.setData({
-        order:res.data
+        orderList:res.data
       })
     })
-    .catch(err=>{
-      console.log("获取失败",err)
-    })
-   },
-    
+  },
   gotogoodsselect(){
     wx.navigateTo({
       url: '/pages/goodsselect/goodsselect',
@@ -26,25 +28,38 @@ Page({
       url: '/pages/my/my',
     })
   },
+  gotopay(){
+    wx.navigateTo({
+      url: '/pages/pay/pay',
+    })
+  },
   gotohome(){
     wx.navigateTo({
       url: '/pages/home/home',
     })
   },
-
   gotoorder(){
     wx.navigateTo({
-      url: '/pages/order/order',
+      url: '/pages/myOrder/myOrder',
     })
   },
-  gotohis(){
-    wx.navigateTo({
-      url: '/pages/his/his',
-    })
-  },
+  
   gotopointshop(){
     wx.navigateTo({
       url: '/pages/pointshop/pointshop',
     })
+  },
+  choooType(event){
+    console.log(event.currentTarget.data.type)
+    let Order_status=event.currentTarget.data.type
+    this.setData({
+      Order_status
+    }
+    )
   }
+
+ 
+
+
+ 
 })
