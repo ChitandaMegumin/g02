@@ -14,8 +14,17 @@ Page({
     .then(res=>{
       console.log(res)
       this.setData({
-        orderList:res.data
+        List:res.data
       })
+    })
+    this.setData({
+      orderList:wx.getStorageSync('cartList')
+    })
+    console.log(wx.getStorageSync('cartList'))
+  },
+  getGoodsInCart(){
+    this.setData({
+      goodsincart:wx.getStorageSync('cartList')
     })
   },
   gotogoodsselect(){

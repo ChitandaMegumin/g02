@@ -3,26 +3,27 @@
   <view class="menu-item {{Order_status==1?'choose-type':''}}" bindtap="choooType" data-type="0">已完成</view>
 </view>
 
-<block wx:for="{{orderList}}">
-  <view class="order-wrap" bindtap="gotopay">
-    <view class="order-id" >订单号:{{item._id}}</view>
-    <!-- <block wx:for="{{item.goods}}" wx:for-item="good"> -->
-      <!-- <view class="good-wrap">
-        <image class="good-img" src="{{item.Order_img}}"></image>
+    
+    <view class="order-wrap" bindtap="gotopay">
+    <block wx:for="{{orderList}}">
+    <!-- <block wx:for="{{orderList}}" wx:for-item="good"> -->
+      <view class="order-id" >商品号:{{item._id}}</view>
+      <view class="good-wrap">
+        <image class="good-img" src="{{item.Commodity_img}}"></image>
         <view>
-          <view>{{item.Goods_name}}</view>
+          <view>{{item.Commodity_name}}</view>
           <view class="good-bottom">
-            <view>￥{{item.Order_commodprice}}</view>
-            <view>X{{item.Order_commodnum}}</view>
+            <view>￥{{item.Commodity_price}}</view>
+            <view>X{{item.Commodity_currentnum}}</view>
           </view>
         </view>
-      </view> -->
+      </view>
     <!-- </block> -->
-    <view>合计:￥{{item.price}}</view>
-    <view>时间:{{item.Order_time}}</view>
-  </view>
-</block>
-
+    
+  </block>
+    <!-- <view>合计:￥{{item.price}}</view>
+    <view>时间:{{item.Order_time}}</view> -->
+</view>
 
 <view class="footer">
     <view>

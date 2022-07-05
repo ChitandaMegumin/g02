@@ -4,14 +4,14 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/home/home",
+          "pathName": "pages/myOrder/myOrder",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/express/express",
+          "pathName": "pages/order/order",
           "query": "",
           "launchMode": "default",
           "scene": null
