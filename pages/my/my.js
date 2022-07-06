@@ -19,12 +19,12 @@ Page({
     })
   },
   gotogoodsselect(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/goodsselect/goodsselect',
     })
   },
   gotomy(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/my/my',
     })
   },
@@ -34,27 +34,27 @@ Page({
     })
   },
   gotohome(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/home/home',
     })
   },
   gotopointshop(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/pointshop/pointshop',
     })
   },
   gotomembercode(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/member_code/member_code',
     })
   },
   gotochangeimage(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/bgc/bgc',
     })
   },
   gotochangebg(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/bg/bg',
     })
   }

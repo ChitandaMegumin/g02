@@ -81,7 +81,7 @@ Page({
     },
     gotoaddr()
     {
-      wx.navigateTo({
+      wx.redirectTo({
         url: '/pages/addr/addr',
       })
     }

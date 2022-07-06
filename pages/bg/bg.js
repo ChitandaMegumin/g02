@@ -40,7 +40,7 @@ Page({
       console.log("保存照片失败",err)
     })
     setTimeout(this.onLoad,200 );
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/my/my',
     })
   },

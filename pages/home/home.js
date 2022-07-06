@@ -21,42 +21,42 @@ Page({
   },
 
   gotogoodsselect(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/goodsselect/goodsselect',
     })
   },
   gotomy(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/my/my',
     })
   },
   gotohome(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/home/home',
     })
   },
   gotoorder(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/myOrder/myOrder',
     })
   },
   gotopointshop(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/pointshop/pointshop',
     })
   },
   gotoaddr(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/addr/addr',
     })
   },
   gotomembercode(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/member_code/member_code',
     })
   },
   gotoexpress(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/express/express',
     })
   }

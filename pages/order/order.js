@@ -23,33 +23,33 @@ Page({
     })
   },
   gotogoodsselect(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/goodsselect/goodsselect',
     })
   },
   gotomy(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/my/my',
     })
   },
   gotopay(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/pay/pay',
     })
   },
   gotohome(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/home/home',
     })
   },
   gotoorder(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/myOrder/myOrder',
     })
   },
   
   gotopointshop(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/pointshop/pointshop',
     })
   },

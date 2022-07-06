@@ -19,22 +19,22 @@ Page({
   }
   ,
   gotogoodsselect(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/goodsselect/goodsselect',
     })
   },
   gotomy(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/my/my',
     })
   },
   gotohome(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/home/home',
     })
   },
   gotoaddredit(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/addr_edit/addr_edit',
     })
   }

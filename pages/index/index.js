@@ -6,7 +6,7 @@ Page({
   },
   //go事件
   go:function(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../cms/cms',
     })
   },

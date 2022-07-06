@@ -29,37 +29,37 @@ Page({
     })
   },
   gotogoodsselect(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/goodsselect/goodsselect',
     })
   },
   gotomy(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/my/my',
     })
   },
   gotohome(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/home/home',
     })
   },
   gotoorder(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/myOrder/myOrder',
     })
   },
   gotopointshop(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/pointshop/pointshop',
     })
   },
   gotocom(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/order/order',
     })
   },
   gotopay(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/pay/pay',
     })
   },
@@ -80,7 +80,7 @@ Page({
             status: 1
           }
       })
-      wx.navigateTo({
+      wx.redirectTo({
         url: '/pages/order/order',
       })
       

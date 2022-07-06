@@ -60,7 +60,7 @@ Page({
             title: '登录成功！',
           })
           app.globalData._id=user._id,
-          wx.navigateTo({
+          wx.redirectTo({
             url: '../home/home?', //登录的时候传一个微信号
           })
         }

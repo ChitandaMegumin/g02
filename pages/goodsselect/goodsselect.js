@@ -138,7 +138,7 @@ Page({
       })
     }
     else{
-      wx.navigateTo({
+      wx.redirectTo({
       url: '/pages/pay/pay',
     })
     }
@@ -268,6 +268,11 @@ Page({
   getGoodsInCart(){
     this.setData({
       goodsincart:wx.getStorageSync('cartList')
+    })
+  },
+  gotoAddr(){
+    wx.redirectTo({
+      url: '/pages/addr/addr',
     })
   }
 })

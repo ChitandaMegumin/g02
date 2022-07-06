@@ -2,7 +2,7 @@
 <view class="container1">
   <view class="header">
   <view>🏬 国际花城小卖部</view>
-  <button type="default" >配送地址</button>
+  <button type="default" bindtap="gotoAddr" >配送地址</button>
   </view>
   <view class="body">
     <scroll-view class="left" scroll-y="true">
